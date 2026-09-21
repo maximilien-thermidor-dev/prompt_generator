@@ -1,0 +1,1772 @@
+{
+  "人数構成": {
+    "構成": {
+      "ソロ・単体": [
+        {"name": "一人のみ", "value": "solo, 1girl only, "},
+        {"name": "ソロ・フォーカス", "value": "solo focus, 1girl, "}
+      ],
+      "同性グループ": [
+        {"name": "百合", "value": "2girls, yuri, "},
+        {"name": "異なるポーズ", "value": "2girls, symmetry, "},
+        {"name": "二人組（ペア）", "value": "2girls, "},
+        {"name": "三人組（トリオ）", "value": "3girls, "},
+        {"name": "複数（グループ）", "value": "multiple girls, "},
+        {"name": "大人数（クラス・集合）", "value": "crowd of girls, school girls, "}
+      ],
+      "男女・カップリング": [
+        {"name": "男女ペア", "value": "1girl, 1male, "}
+      ],
+      "特殊・ハレム": [
+        {"name": "逆ハレム", "value": "1girl, multiple boys, group of males, "},
+        {"name": "ハレム", "value": "1men, multiple girls, group of girls, "},
+        {"name": "乱交・集団", "value": "group sex, gangbang, "},
+        {"name": "群衆の中の一人", "value": "1girl, standing in crowd, spectators, "}
+      ],
+      "レズのお相手":[
+        {"name": "顔が見えない", "value": "faceless girl, "},
+        {"name": "頭が見切れる", "value": "girl head out of frame, "},
+        {"name": "POV", "value": "girl pov, "},
+        {"name": "視聴者の手", "value": "girl pov hands, "}
+      ],
+      "男の設定":[
+        {"name": "顔が見えない", "value": "faceless male, "},
+        {"name": "頭が見切れる", "value": "male head out of frame, "},
+        {"name": "POV", "value": "male pov, "},
+        {"name": "視聴者の手", "value": "pov hands, "},
+        {"name": "太った男", "value": "fat male, "}
+      ]
+    }
+  },
+  "アングル": {
+    "カメラアングル・画角": {
+      "基本アングル": [
+        {"name": "正面", "value": "front view, "},
+        {"name": "ローアングル", "value": "low angle, "},
+        {"name": "ハイアングル", "value": "high angle, "},
+        {"name": "斜めアングル", "value": "dutch angle, "},
+        {"name": "俯瞰", "value": "bird's-eye view, overhead shot, "},
+        {"name": "地這い", "value": "from extreme low angle, "},
+        {"name": "自撮り", "value": "selfie, "},
+        {"name": "抱き枕風", "value": "dakimakura, "},
+        {"name": "サイドビュー（横顔）", "value": "from side, side view, "},
+        {"name": "バックビュー（後ろ姿）", "value": "from, behind, back view, "},
+        {"name": "股座からの見上げ", "value": "from below "},
+        {"name": "床からの見上げ", "value": "from floor, "},
+        {"name": "ボケ演出（被写界深度）", "value": "depth of field, bokeh, blurry background, "},
+        {"name": "引き", "value": "very wide shot, landscape, "},
+        {"name": "超広角（魚眼）", "value": "fisheye lens, panoramic, "}
+      ],
+      "画角": [
+        {"name": "かなりアップ", "value":"extreme close up "},
+        {"name": "頭から肩", "value": "face focus, "},
+        {"name": "上半身", "value": "upper body, "},
+        {"name": "頭から太もも", "value": "cowboy shot, "},
+        {"name": "全身", "value": "full body, "},
+        {"name": "下半身のみ", "value": "lower body, "}
+      ]
+    },
+    "クローズアップ":{
+      "場所": [
+        {"name": "かなりアップ", "value": "extreme close up "},
+        {"name": "瞳のクローズアップ", "value": "eyes focus, "},
+        {"name": "口元", "value": "lip focus, "},
+        {"name": "首元", "value": "throat focus, "},
+        {"name": "手・指先", "value": "close-up of hands, "},
+        {"name": "胸元", "value": "cleavage focus, "},
+        {"name": "おへそ", "value": "navel focus, "},
+        {"name": "腰", "value": "hips focus, "},
+        {"name": "お尻", "value": "ass focus, "},
+        {"name": "太もも", "value": "thighs focus, "},
+        {"name": "膝裏", "value": "legs focus, "},
+        {"name": "足首・足先", "value": "foot focus, "},
+        {"name": "足裏", "value": "soles focus, "},
+        {"name": "足指", "value": "toes focus, "},
+        {"name": "背中", "value": "back view focus, "},
+        {"name": "おっぱい", "value": "focus on chest "},
+        {"name": "マンコ", "value": "pussy focus, "},
+        {"name": "クリトリス", "value": "clitoris focus, "},
+        {"name": "アナル", "value": "anal focus, "}
+      ]
+    }
+  },
+  "体の造形": {
+    "おっぱい": {
+      "サイズ": [
+        {"name": "無胸・微乳", "value": "flat chest, "},
+        {"name": "控えめ", "value": "small breasts, "},
+        {"name": "標準", "value": "medium breasts, "},
+        {"name": "巨乳", "value": "large breasts, "},
+        {"name": "爆乳", "value": "huge breasts, "}
+      ],
+      "形状": [
+        {"name": "おわん型", "value": "round breasts, "},
+        {"name": "上向き", "value": "perky breasts, "},
+        {"name": "自然な垂れ", "value": "sagging breasts, "},
+        {"name": "離れ乳", "value": "wide-set breasts, "},
+        {"name": "谷間強調", "value": "cleavage, "},
+        {"name": "はみ乳", "value": "sideboob, "}
+      ],
+      "乳首・乳輪": [
+        {"name": "勃起乳首", "value": "erect nipples, "},
+        {"name": "ぷっくり乳首", "value": "puffy nipples, "},
+        {"name": "小さな乳輪", "value": "small areolae, "},
+        {"name": "大きな乳輪", "value": "large areolae, "},
+        {"name": "ピンク色", "value": "pink nipples, "},
+        {"name": "陥没乳首", "value": "inverted nipples, "}
+      ],
+      "状態":[
+        {"name": "胸チラ", "value": "breast slip, "},
+        {"name": "乳首ポロリ（片方）", "value": "one nipple slip, "},
+        {"name": "乳首ポロリ（両方）", "value": "nipple slip, "},
+        {"name": "乳揺れ", "value": "bouncing breasts, "},
+        {"name": "服の上から乳首浮き", "value": "covered erect nipples, "}
+      ]
+    },
+    "まんこ": {
+      "形状・質感": [
+        {"name": "縦スジ", "value": "cleft of venus, "},
+        {"name": "すじ（服越し）", "value": "cameltoe, "},
+        {"name": "ふっくら", "value": "puffy vulva, "},
+        {"name": "ぷにまん", "value": "fat mons, "},
+        {"name": "控えめな花弁", "value": "hidden labia, "},
+        {"name": "露出した花弁", "value": "protruding labia, "},
+        {"name": "マン汁", "value": "pussy juice, "},
+        {"name": "マン汁溜まり", "value": "juice puddle, "},
+        {"name": "垂れたマン汁", "value": "pussy juice trail, "},
+        {"name": "マン汁のシミ", "value": "pussy juice stain, "},
+        {"name": "肉厚", "value": "fleshy pussy, "}
+      ],
+      "クリトリス": [
+        {"name": "控えめ", "value": "clitoris, "},
+        {"name": "露出", "value": "visible clitoris, "},
+        {"name": "勃起", "value": "swollen clitoris, "}
+      ],
+      "陰毛": [
+        {"name": "パイパン", "value": "hairless pussy, "},
+        {"name": "生えかけ", "value": "black sparse pubic hair, "},
+        {"name": "通常", "value": "black pubic hair, "},
+        {"name": "剛毛", "value": "black excessive pubic hair, "},
+        {"name": "はみ毛", "value": "black pubic hair peeking, "}
+      ]
+    },
+    "お尻": {
+      "お尻の動き":[
+        {"name": "揺れるお尻", "value": "bouncing ass, "}
+      ],      
+      "アナル":[
+        {"name": "アナル", "value": "anus, "}
+      ],
+      "形状": [
+        {"name": "丸型（ピーチ）", "value": "round buttocks, bubble butt, "},
+        {"name": "ハート型", "value": "heart-shaped buttocks, "},
+        {"name": "引き締まった", "value": "toned buttocks, muscular hips, "},
+        {"name": "座った時の広がり", "value": "spreading buttocks, "},
+        {"name": "V型（逆三角形）", "value": "V-shaped buttocks, "},
+        {"name": "平らなお尻", "value": "flat buttocks, slender hips, "}
+      ]
+    },
+    "体系":{
+      "その他":[
+        {"name": "細い腰", "value": "thin waist, "},
+        {"name": "くびれ", "value": "narrow waist, "},
+        {"name": "おへそ", "value": "navel, "},
+        {"name": "お腹", "value": "belly, "},
+        {"name": "太もも", "value": "thighs, "},
+        {"name": "むっちりした太もも", "value": "thick thighs, "},
+        {"name": "美脚", "value": "sexy legs, "},
+        {"name": "長い脚", "value": "long legs,"},
+        {"name": "ふくらはぎ", "value": "calves, "},
+        {"name": "足首", "value": "ankles, "},
+        {"name": "足の裏", "value": "soles, "},
+        {"name": "細身", "value": "slender, "},
+        {"name": "スリム", "value": "slim, "},
+        {"name": "ガリガリ", "value": "skinny, "},
+        {"name": "筋肉質", "value": "muscular, "},
+        {"name": "アスレチック", "value": "athletic, "},
+        {"name": "引き締まった体", "value": "fit, "},
+        {"name": "ぽっちゃり", "value": "plump, "},
+        {"name": "ふくよか", "value": "chubby, "},
+        {"name": "太っている", "value": "fat, "},
+        {"name": "わがままボディ/曲線美", "value": "curvy, "},
+        {"name": "安産型", "value": "wide hips, "}
+      ]
+    },
+    "肌": {
+      "質感": [
+        {"name": "汗ばんだ肌", "value": "sweaty skin ,"},
+        {"name": "滴る汗", "value": "sweatdrop, "},
+        {"name": "玉の汗", "value": "beads of sweat, perspiration, "},
+        {"name": "濡れた肌", "value": "wet skin, "},
+        {"name": "火照った肌", "value": "flushed skin, warm skin tone, "},
+        {"name": "つやつやの肌", "value": "shiny skin, "},
+        {"name": "てかてかの肌", "value": "gleaming skin, "}
+      ],
+      "肌の色": [
+        {"name": "色白", "value": "pale skin, "},
+        {"name": "もっと色白", "value": "pale white skin, "},
+        {"name": "日焼けした肌", "value": "tanned skin, "},
+        {"name": "褐色の肌", "value": "tan skin, "},
+        {"name": "ビキニ跡（日焼け）", "value": "bikini tan lines, tanlines, "},
+        {"name": "胸の日焼け跡", "value": "bikini tan lines on breasts, "},
+        {"name": "腰の日焼け跡", "value": "bikini tan lines on hips, "}
+      ]
+    }
+  },
+  "頭部": {
+    "髪型": {
+      "髪の長さ": [
+        {"name": "ベリーショート", "value": "pixie cut, "},
+        {"name": "ショート", "value": "short hair, "},
+        {"name": "ボブ", "value": "bob cut, "},
+        {"name": "肩にかかる長さ", "value": "shoulder-length hair, "},
+        {"name": "ミディアム", "value": "medium hair, "},
+        {"name": "ロング", "value": "long hair, "},
+        {"name": "スーパーロング", "value": "waist length hair, "}
+      ],
+      "前髪": [
+        {"name": "前髪", "value": "bangs, "},
+        {"name": "シースルー", "value": "see-through bangs, "},
+        {"name": "片目を隠す", "value": "hair over one eye, "},
+        {"name": "ぱっつん", "value": "blunt bangs, "},
+        {"name": "分け目", "value": "parted bangs, "},
+        {"name": "流し前髪", "value": "swept bangs, "},
+        {"name": "眉間前髪", "value": "hairs between eyes, "},
+        {"name": "眉間前髪(クロス）", "value": "hairs between eyes, crossed bangs, "},
+        {"name": "センター分け", "value": "center-parted, "},
+        {"name": "姫カット", "value": "hime cut, "},
+        {"name": "カーテンバング", "value": "curtain bangs, "},
+        {"name": "前髪なし", "value": "forehead, "}
+      ],
+      "ヘアアレンジ": [
+        {"name": "ストレートヘア", "value": "straight hair, "},
+        {"name": "ウェーブ", "value": "wavy hair, "},
+        {"name": "ハーフアップ", "value": "half updo, "},
+        {"name": "ポニーテール", "value": "ponytail, "},
+        {"name": "ポニーテール", "value": "braided ponytail, "},
+        {"name": "ショートポニーテール", "value": "short ponytail, "},
+        {"name": "ハイポニーテール", "value": "high ponytail, "},
+        {"name": "ローポニーテール", "value": "low ponytail, "},
+        {"name": "サイドポニー", "value": "side ponytail, "},
+        {"name": "ツインテール", "value": "twin tails, "},
+        {"name": "サイドアップ", "value": "side up, "},
+        {"name": "ツーサイドアップ", "value": "two side up, "},
+        {"name": "髪をまとめる", "value": "hair up, "},
+        {"name": "お団子（ダブル）", "value": "double hair buns, "},
+        {"name": "サイド三つ編み", "value": "side braid, "},
+        {"name": "編み込み（1つ）", "value": "braid, "},
+        {"name": "三つ編み", "value": "braids, "},
+        {"name": "カール", "value": "curly hair, "},
+        {"name": "内巻きカール", "value": "curl inside hair, "},
+        {"name": "外巻きカール", "value": "curl outward hair, "},
+        {"name": "ドリルヘア（縦ロール）", "value": "drill hair, "},
+        {"name": "シャギー", "value": "shaggy cut, "},
+        {"name": "耳掛け", "value": "hair tucked behind ear, "},
+        {"name": "アホ毛", "value": "ahoge, "},
+        {"name": "切りそろえ", "value": "blunt ends, "}
+      ],
+      "髪の状態・質感": [
+        {"name": "濡れ髪", "value": "wet hair, "},
+        {"name": "寝癖", "value": "bedhead, "},
+        {"name": "乱れ髪", "value": "messy hair, "},
+        {"name": "風になびく髪", "value": "windblown hair, hair fluttering, "}
+      ],
+      "髪色": [
+        {"name": "黒", "value": "black hair, "},
+        {"name": "栗", "value": "brown hair, "},
+        {"name": "焦茶", "value": "dark brown hair, "},
+        {"name": "金", "value": "blonde hair, "},
+        {"name": "銀", "value": "silver hair, "},
+        {"name": "薄", "value": "pink hair, "},
+        {"name": "水", "value": "blue hair, "},
+        {"name": "紫", "value": "purple hair, "},
+        {"name": "赤", "value": "red hair, "}
+      ],
+    "アイテム":[
+        {"name": "ヘアピン", "value": "hairclip, "}
+      
+    ]
+    },
+    "瞳": {
+      "瞳の色":[
+        {"name": "黒", "value": "black eyes, "},
+        {"name": "茶", "value": "brown eyes, "},
+        {"name": "青", "value": "blue eyes, "},
+        {"name": "緑", "value": "green eyes, "},
+        {"name": "赤", "value": "red eyes, "},
+        {"name": "桃", "value": "ping eyes, "},
+        {"name": "橙", "value": "orange eyes, "},
+        {"name": "黄", "value": "yellow eyes, "},
+        {"name": "紫", "value": "purple eyes, "}
+      ],
+      "目の形状": [
+        {"name": "タレ目", "value": "tareme, "},
+        {"name": "ツリ目", "value": "tsurime, "}
+      ],
+      "視線":[
+        {"name": "上を向く", "value": "looking up, "},
+        {"name": "下を向く", "value": "looking down, "},
+        {"name": "カメラ目線", "value": "looking at viewer, "},
+        {"name": "視線を逸らす", "value": "looking away, "},
+        {"name": "見返り", "value": "looking back, "}
+      ],
+      "目の表情":[
+        {"name": "目を閉じる", "value": "closed eyes, "},
+        {"name": "ジト目", "value": "jitome, "},
+        {"name": "半眼（うっとり）", "value": "half-closed eyes, "},
+        {"name": "瞳孔が開く", "value": "dilated pupils, "},
+        {"name": "ハート目", "value": "heart-shaped pupils, "},
+        {"name": "ギュッと瞑る", "value": "tightly closed eyes, "},
+        {"name": "半目", "value": "half-closed eyes, "},
+        {"name": "細められた目", "value": "narrowed eyes, "},
+        {"name": "凝視", "value": "staring, intense stare, "},
+        {"name": "白目を剥く", "value": "rolling eyes, "}
+      ],
+      "瞳孔":[
+        {"name": "ぐるぐる目", "value": "spiral eyes, "},
+        {"name": "詳細な瞳", "value": "detailed eyes, detailed iris, eyelashes, sharp focus on eyes, defined eyes, "}
+      ]
+    },
+    "口元":{
+      "口の開き方":[
+        {"name": "口を半開きにする", "value": "parted lips, open mouth, "},
+        {"name": "唇を噛む", "value": "biting lip, "},
+        {"name": "大きく口を開ける", "value": "wide open mouth, gasping, "},
+        {"name": "唾液", "value": "saliva, "},
+        {"name": "唾液ブリッジ", "value": "saliva trail, "},
+        {"name": "泣き顔", "value": "crying, "},
+        {"name": "よだれ", "value": "drooling, "},
+        {"name": "鼻水", "value": "snot, "},
+        {"name": "えづき・嘔吐", "value": "vomiting, "},
+        { "name": "歯を食いしばる", "value": "clenching teeth, "},
+        {"name": "下唇を噛む", "value": "biting lip, suggestive expression, "},
+        {"name": "口を開ける", "value": "open mouth, "},
+        {"name": "ほっぺが膨らむ", "value": "cheek bulge, "}
+      ]
+    },
+    "顔の表情":{
+      "顔文字風":[
+        {"name": "+_+", "value": "+_+, "},
+        {"name": ";_;", "value": ";_;, "},
+        {"name": "o_o", "value": "o_o, "},
+        {"name": ":>", "value": ":>, "},
+        {"name": ";>", "value": ";>, "},
+        {"name": ":<", "value": ":<, "},
+        {"name": ":o", "value": ":o, "},
+        {"name": ":)", "value": ":), "},
+        {"name": ":(", "value": ":(, "},
+        {"name": ":p", "value": ":p, "},
+        {"name": ":q", "value": ":q, "},
+        {"name": ";q", "value": ";q, "},
+        {"name": "@_@", "value": "@_@, "},
+        {"name": ":t", "value": ":t, "}
+      ],
+      "スマイル・喜び系": [
+        {"name": "微笑み", "value": "light smile ,"},
+        {"name": "笑顔", "value": "smile, "},
+        {"name": "にやり", "value": "grin, "},
+        {"name": "にやにや", "value": "smirk, "},
+        {"name": "笑う", "value": "laughing, "},
+        {"name": "大笑い", "value": "burst out laughing, "},
+        {"name": "どや顔", "value": "smug, "},
+        {"name": "いたずらな笑み", "value": "naughty smile, "},
+        {"name": "いたずらっぽい", "value": "mischievous smile, "},   
+        {"name": "うれし涙", "value": "happy tears, "},
+        {"name": "ハッピー", "value": "happy, "}
+      ],
+      "不機嫌・怒り系": [
+        {"name": "怒り", "value": "angry, "},
+        {"name": "激怒", "value": "furious, "},
+        {"name": "不機嫌", "value": "displeased, "},
+        {"name": "しかめっ面", "value": "scowl, "},
+        {"name": "ふくれっ面", "value": "pout, "},
+        {"name": "イライラ", "value": "annoyed, "},
+        {"name": "目元に影", "value": "shaded face, "},
+        {"name": "睨む", "value": "glaring, "}
+      ],
+      "悲しみ・泣き系": [
+        {"name": "涙目", "value": "tears, "},
+        {"name": "悲しい", "value": "sad, "},
+        {"name": "泣く", "value": "crying, "},
+        {"name": "すすり泣き", "value": "sobbing, "},
+        {"name": "絶望", "value": "despair, "},
+        {"name": "がっかりする", "value": "disappointed, "},
+        {"name": "涙ぐむ", "value": "teary-eyed, "},
+        {"name": "顔を覆って泣く", "value": "crying with face in hands, "}
+      ],
+      "照れ・恥ずかしさ系": [
+        {"name": "見開く", "value": "wide-eyed, "},
+        {"name": "照れる", "value": "shy, "},
+        {"name": "赤面", "value": "blush, "},
+        {"name": "はにかむ", "value": "bashful, "},
+        {"name": "恥ずかしい", "value": "embarrassed, "},
+        {"name": "顔全体が赤い", "value": "full-face blush, "},
+        {"name": "あわあわする", "value": "wavy mouth, "},
+        {"name": "動揺する", "value": "flustered, "}
+      ],
+      "驚き・恐怖系": [
+        {"name": "ビクッとした顔", "value": "wince, "},
+        {"name": "ばれて焦る", "value": "caught, "},
+        {"name": "驚く", "value": "surprised, "},
+        {"name": "見開いて丸い口", "value": "wide-eyed, :o, "},
+        {"name": "ショック", "value": "shocked, "},
+        {"name": "唖然とする", "value": "dumbfounded, "},
+        {"name": "パニック", "value": "panicking, "},
+        {"name": "怖がる", "value": "scared, "},
+        {"name": "恐怖", "value": "horrified, "}
+      ],
+      "嫌悪・軽蔑系": [
+        {"name": "嫌悪感", "value": "disgust, "},
+        {"name": "軽蔑", "value": "disdain, "},
+        {"name": "見下す", "value": "looking down on, "},
+        {"name": "呆れる", "value": "exasperated, "}
+      ],
+      "苦痛・我慢系": [
+        {"name": "苦痛", "value": "painful, "},
+        {"name": "我慢する", "value": "enduring, "},
+        {"name": "息を切らす", "value": "panting, "},
+        {"name": "恍惚", "value": "ecstasy, "}
+      ],
+      "その他・状態": [
+        {"name": "退屈", "value": "bored "},
+        {"name": "無表情", "value": "expressionless, "},
+        {"name": "眠そう", "value": "sleepy, "},
+        {"name": "疲れた", "value": "tired, "},
+        {"name": "考え中", "value": "thinking, "},
+        {"name": "ウィンク", "value": "wink, "}
+      ],
+      "エロ":[
+        {"name": "メスガキ", "value": "mesugaki, "},
+        {"name": "アヘ顔", "value": "ahegao, "},
+        {"name": "最高潮", "value": "climax, "},
+        {"name": "焦点の合わない瞳", "value": "vacant eyes, blank stare, hollow eyes, blurry eyes, "},
+        {"name": "玉の汗", "value": "sweat, "},
+        {"name": "荒い息遣い", "value": "panting, "},
+        {"name": "震え・痙攣", "value": "trembling, shuddering, trembling body, "},
+        {"name": "オーガズム", "value": "orgasm, "},
+        {"name": "潮吹き", "value": "squirting, "},
+        {"name": "挑発的な表情", "value": "provocative eyes, seductive smirking, bedroom eyes, "},
+        {"name": "恍惚・とろけた表情", "value": "ecstasy, trance, melting expression, "},
+        {"name": "情欲に満ちた顔", "value": "lustful eyes, hungry gaze, "},
+        {"name": "苦痛と快楽の混濁", "value": "pained but pleased, mixed feelings, distorted expression, "},
+        {"name": "指をくわえる", "value": "finger in mouth, sucking finger, "},
+        {"name": "飴や物をくわえる", "value": "holding lollipop in mouth, "}
+      ]
+    }
+  },
+  "装飾品": {
+    "装飾品": {
+      "日常品": [
+        {"name": "メガネ", "value": "glasses, "},
+        {"name": "カチューシャ", "value": "headband, alice band, "},
+        {"name": "ヘアリボン", "value": "hair ribbon, hair bow, "}
+      ],
+      "マスク": [
+        {"name": "不織布マスク（白）", "value": "medical mask, surgical mask, white mask,"},
+        {"name": "黒マスク", "value": "black mask,"},
+        {"name": "顎マスク", "value": "mask under chin,"},
+        {"name": "片耳掛け", "value": "mask hanging from one ear,"}
+      ],
+      "ネイル": [
+        {"name": "長い爪（ロングネイル）", "value": "long fingernails,"},
+        {"name": "派手なネイル（デコ）", "value": "decorated nails, colorful nails,"},
+        {"name": "ジェルネイルの光沢", "value": "shiny nails, glossy gel nails,"},
+        {"name": "フレンチネイル", "value": "french manicure,"}
+      ],
+      "ピアス": [
+        {"name": "シンプルなピアス", "value": "earrings, studs,"},
+        {"name": "フープピアス", "value": "hoop earrings,"},
+        {"name": "へそピアス（基本）", "value": "navel piercing, belly button ring,"},
+        {"name": "ぶら下がるへそピアス", "value": "dangling navel piercing, jewelry,"}
+      ],
+      "ネックレス・ジュエリー": [
+        {"name": "チョーカー", "value": "choker, neck ribbon,"},
+        {"name": "細いゴールドチェーン", "value": "thin gold chain necklace,"},
+        {"name": "ハートのペンダント", "value": "heart-shaped pendant,"},
+        {"name": "パールのネックレス", "value": "pearl necklace,"},
+        {"name": "アンクレット", "value": "anklet, foot jewelry,"}
+      ],
+      "帽子":[
+        {"name": "野球帽", "value": "baseball cap, "},
+        {"name": "ベレー帽", "value": "beret, "},
+        {"name": "ニット帽", "value": "beanie, "},
+        {"name": "麦わら帽子", "value": "straw hat, "}
+      ]
+    }
+  },
+  "衣類の有無":{
+    "衣類の有無":{
+      "全裸":[
+        {"name": "全裸", "value": "naked, nude,"}
+      ],
+      "下着未着用":[
+        {"name": "ノーブラ", "value": "no bra,"},
+        {"name": "ノーパン", "value": "no panties,"}
+      ],
+      "どちらか裸":[
+        {"name": "トップレス", "value": "topless,"},
+        {"name": "ボトムレス", "value": "bottomless,"}
+        ]
+    }
+  },
+  "下着":{
+    "下着": {
+      "ブラ": [
+        {"name": "スタンダード", "value": "bra,"},
+        {"name": "キュート", "value": "cute bra,"},
+        {"name": "ストライプ", "value": "striped bra,"},
+        {"name": "水玉", "value": "polka dot bra,"},
+        {"name": "苺柄", "value": "strawberry bra,"},
+        {"name": "チェック", "value": "plaid bra,"},
+        {"name": "縞々（しまぱん）", "value": "striped bra,"},
+        {"name": "ヒョウ柄", "value": "leopard print bra,"},
+        {"name": "レース", "value": "lace bra,"},
+        {"name": "花柄", "value": "floral pattern bra,"},
+        {"name": "シースルー", "value": "sheer bra,"},
+        {"name": "レース縁取り", "value": "lace-trimmed bra,"},
+        {"name": "リブ", "value": "ribbed bra,"},
+        {"name": "刺繡", "value": "embroidery bra,"},
+        {"name": "花柄刺繡", "value": "floral embroidery bra,"},
+        {"name": "フリル", "value": "frilled bra,"},
+        {"name": "リボン", "value": "bow bra,"},
+
+        {"name": "フロントタイブラ", "value": "front-tie bra,"},
+        {"name": "スポーツブラ", "value": "sports bra,"},
+        {"name": "三角ブラ", "value": "triangle bra,"},
+        {"name": "バンドゥ（チューブトップ）", "value": "bandeau,"},
+        {"name": "ストラップレス", "value": "strapless bra,"},
+        {"name": "カップレス", "value": "cupless bra,"},
+        {"name": "絆創膏", "value": "bandaid on nipple,"},
+        {"name": "ニップレス", "value": "pasties,"},
+        {"name": "ハートニップレス", "value": "heart pasties,"}
+      ],
+      "パンティ": [
+        {"name": "スタンダード", "value": "panties,"},
+        {"name": "キュート", "value": "cute panties,"},
+        {"name": "ストライプ", "value": "striped panties,"},
+        {"name": "水玉", "value": "polka dot panties,"},
+        {"name": "苺柄", "value": "strawberry panties,"},
+        {"name": "チェック", "value": "plaid panties,"},
+        {"name": "縞々（しまぱん）", "value": "striped panties,"},
+        {"name": "ヒョウ柄", "value": "leopard print pantiesa,"},
+        {"name": "レース", "value": "lace panties,"},
+        {"name": "花柄", "value": "floral pattern panties,"},
+        {"name": "シースルー", "value": "sheer panties,"},
+        {"name": "レース縁取り", "value": "lace-trimmed panties,"},
+        {"name": "リブ", "value": "ribbed panties,"},
+        {"name": "刺繡", "value": "embroidery panties,"},
+        {"name": "花柄刺繡", "value": "floral embroidery panties,"},
+        {"name": "フリル", "value": "frilled panties,"},
+        {"name": "リボン", "value": "ribbon panties,"},
+        {"name": "小さなリボン", "value": "tiny bow panties,"},
+
+        {"name": "ローライズ", "value": "low-rise panties,"},
+        {"name": "ボーイショーツ", "value": "boyshorts,"},
+        {"name": "サイドタイ", "value": "side tie panties,"},
+        {"name": "ハイレグ", "value": "highleg panties,"},
+        {"name": "ストリングパン", "value": "string panties,"},
+        {"name": "Gストリングパン", "value": "g-string panties,"},
+        {"name": "Tバック", "value": "thong panties,"},
+        {"name": "穴あき", "value": "crotchless panties,"},
+        {"name": "絆創膏", "value": "bandaid on pussy,"},
+        {"name": "パンスト越しのパンtン日", "value": "panties under pantyhose"}
+      ],
+      "色": [
+        {"name": "純白", "value": "white under wear,"},
+        {"name": "漆黒", "value": "black under wear,"},
+        {"name": "ネイビー", "value": "navy blue under wear,"},
+        {"name": "ベージュ", "value": "beige under wear,"},
+        {"name": "ピンク", "value": "pink under wear,"},
+        {"name": "サックスブルー", "value": "light blue under wear,"},
+        {"name": "ラベンダー", "value": "lavender under wear,"},
+        {"name": "ミントグリーン", "value": "mint green under wear,"},
+        {"name": "パステルイエロー", "value": "pale yellow under wear,"},
+        {"name": "赤", "value": "red under wear,"},
+        {"name": "ワインレッド", "value": "wine red under wear,"},
+        {"name": "ショッキングピンク", "value": "hot pink under wear,"},
+        {"name": "オレンジ", "value": "orange under wear,"},
+        {"name": "グレー", "value": "gray under wear,"},
+        {"name": "ゴールド", "value": "metallic gold under wear,"},
+        {"name": "シルバー", "value": "metallic silver under wear,"}
+      ]
+    },
+    "ランジェリー":{
+      "ランジェリー":[
+        {"name": "コルセットランジェリー", "value": "corset lingerie,"},
+        {"name": "ウェストニッパー", "value": "waist cincher,"},
+        {"name": "ガーターベルト", "value": "garter belt,"},
+        {"name": "ボディースーツ", "value": "bodysuit,"},
+        {"name": "ベビードール", "value": "babydoll,"},
+        {"name": "スリップ", "value": "slip dress,"},
+        {"name": "シミーズ", "value": "chemise,"},
+        {"name": "サテンガウン", "value": "satin robe,"},
+        {"name": "バスローブ", "value": "bathrobe,"}
+      ],
+      "色": [
+        {"name": "純白", "value": "white lingerie,"},
+        {"name": "漆黒", "value": "black lingerie,"},
+        {"name": "ネイビー", "value": "navy blue lingerie,"},
+        {"name": "ベージュ", "value": "beige lingerie,"},
+        {"name": "ピンク", "value": "pink lingerie,"},
+        {"name": "サックスブルー", "value": "light blue lingerie,"},
+        {"name": "ラベンダー", "value": "lavender lingerie,"},
+        {"name": "ミントグリーン", "value": "mint green lingerie,"},
+        {"name": "パステルイエロー", "value": "pale yellow lingerie,"},
+        {"name": "赤", "value": "red lingerie,"},
+        {"name": "ワインレッド", "value": "wine red lingerie,"},
+        {"name": "ショッキングピンク", "value": "hot pink lingerie,"},
+        {"name": "オレンジ", "value": "orange lingerie,"},
+        {"name": "グレー", "value": "gray lingerie,"},
+        {"name": "ゴールド", "value": "metallic gold lingerie"},
+        {"name": "シルバー", "value": "metallic silver lingerie,"}
+      ]
+    }
+  },
+  "服装":{
+    "JKセット": {
+      "セーラー服詳細": [
+        {"name": "夏服", "value": "summer serafuku,"},
+        {"name": "冬服", "value": "winter serafuku,"}
+      ],
+      "ブレザー詳細": [
+        {"name": "学校エンブレム", "value": "school crest on blazer,"},
+        {"name": "長袖白ワイシャツ", "value": "long sleeves, white shirt, button up,"},
+        {"name": "半袖白ワイシャツ", "value": "short sleeves, white shirt, button up,"},
+        {"name": "Vネックセーター", "value": "navy v-neck sweater, school sweater,"},
+        {"name": "カーディガン", "value": "beige cardigan, knitwear, buttons,"},
+        {"name": "ニットベスト", "value": "knit vest, sleeveless sweater, v-neck"},
+        {"name": "スクールリボン", "value": "red school ribbon, red bow tie,"},
+        {"name": "スクールネクタイ", "value": "red necktie, red striped tie,"},
+        {"name": "チェックスカート", "value": "plaid mini skirt, checkered skirt,"},
+        {"name": "プリーツスカート", "value": "plaid mini skirt, dark gray skirt,"}
+      ],
+      "体操服詳細": [
+        {"name": "学校指定ジャージ（上）", "value": "school tracksuit jacket, zip-up,"},
+        {"name": "ジャージの裾捲り", "value": "tracksuit pants, rolled up sleeves/hem"},
+        {"name": "体操着（Tシャツ）", "value": "gym shirt, school t-shirt,"},
+        {"name": "ハーフパンツ", "value": "gym shorts, half pants,"},
+        {"name": "ブルマ（レトロ）", "value": "buruma, gym bloomers, vintage gym shorts,"}
+      ],
+      "靴下の種類": [
+        {"name": "生足", "value": "bare legs,"},
+        {"name": "紺ハイソ", "value": "dark navy knee socks,"},
+        {"name": "白ハイソ", "value": "white knee socks,"},
+        {"name": "紺アンクルソックス", "value": "dark navy ankle socks,"},
+        {"name": "白アンクルソックス", "value": "white ankle socks,"},
+        {"name": "ニーハイソックス", "value": "over-knee socks,"},
+        {"name": "ルーズソックス", "value": "white long slouchy socks,"},
+        {"name": "三つ折りソックス", "value": "triple-fold socks,"},
+        {"name": "白フリル付き", "value": "white frilled socks,"}
+      ],
+      "タイツ・スパッツ": [
+        {"name": "黒パンスト", "value": "black pantyhose,"},
+        {"name": "黒タイツ（厚手）", "value": "black opaque tights, 80 denier,"},
+        {"name": "シアータイツ（薄手）", "value": "sheer black pantyhose, 20 denier,"},
+        {"name": "網タイツ", "value": "fishnet tights,"}
+      ],
+      "靴の種類": [
+        {"name": "黒ローファー", "value": "black leather loafers,"},
+        {"name": "茶ローファー", "value": "brown leather loafers,", "desc": "柔らかい印象の茶色。"},
+        {"name": "白スニーカー", "value": "white sneakers,", "desc": "カジュアルな日常。"},
+        {"name": "ハイカットスニーカー", "value": "high-top sneakers,", "desc": "ストリートや活動的。"},
+        {"name": "厚底スニーカー", "value": "platform sneakers, chunky sole,", "desc": "ギャル風のボリューム靴。"},
+        {"name": "上履き", "value": "uwabaki, school indoor shoes,", "desc": "教室内や廊下の再現。"},
+        {"name": "レースアップサンダル", "value": "lace-up sandals,"},
+        {"name": "バレーシューズ", "value": "ballet shoes,"},
+        {"name": "サンダル", "value": "sandals,"},
+        {"name": "ハイヒール", "value": "high heels,"},
+        {"name": "ブーツ", "value": "boots,"}
+      ]
+    },
+    "コスプレ": {
+      "メイド":[
+        {"name": "セット", "value": "maid,maid headdress, frill apron,"},
+        {"name": "基本", "value": "maid,"},
+        {"name": "ヘッドレスト", "value": "maid headdress,"},
+        {"name": "エプロン", "value": "frill apron,"}
+      ],
+      "テニス":[
+        {"name": "セット", "value": "tennis wear, sun visor,"},
+        {"name": "ヘッドレスト", "value": "maid headdress,"},
+        {"name": "エプロン", "value": "frill apron,"}
+      ],
+      "その他":[
+        {"name": "裸タオル", "value": "naked towel,"},
+        {"name": "裸エプロン", "value": "naked apron,"},
+        {"name": "ウエイトレス", "value": "waitress,"},
+        {"name": "ナース・看護師", "value": "nurse outfit, medical uniform, nurse cap, white dress,"},
+        {"name": "ポリス・警察官", "value": "police officer,"},
+        {"name": "バニーガール", "value": "bunny girl, leotard, bunny ears, fishnets, tuxedo collar,"},
+        {"name": "逆バニーガール", "value": "reverse bunnysuit,"},
+        {"name": "チャイナドレス", "value": "cheongsam, qipao, side slit, silk embroidery,"},
+        {"name": "巫女装束", "value": "miko, shrine maiden, red hakama, white kosode,"},
+        {"name": "シスター・修道女", "value": "nun outfit, religious habit, cross necklace, veil,"},
+        {"name": "オフィスレディ（OL）", "value": "business suit,"},
+        {"name": "体操服・ブルマ", "value": "gym uniform, bloomers, track jacket, sporty hairstyle,"},
+        {"name": "レースクイーン", "value": "race queen, tight jumpsuit, high boots, parasol,"},
+        {"name": "着物・浴衣", "value": "kimono, yukata, obi, traditional japanese clothing,"},
+        {"name": "競泳水着", "value": "competition swimsuit, high cut, shiny spandex, slim fit,"},
+        {"name": "チアリーダー", "value": "cheerleader uniform, pom poms, pleated skirt,"},
+        {"name": "キャビンアテンダント（CA）", "value": "flight attendant, airline uniform, neck scarf, elegant,"},
+        {"name": "教師・女教師", "value": "school teacher, black panty hose,suit, tight skirt,"},
+        {"name": "ゴシックロリータ", "value": "gothic lolita, ruffled dress, black lace, bonnet, heavy boots,"},
+        {"name": "花嫁（ウェディングドレス）", "value": "wedding dress, bridal veil, white lace, bouquet,"},
+        {"name": "パジャマ", "value": "pajamas," },
+        {"name": "ジャージ", "value": "tracksuit," },
+        {"name": "レオタード", "value": "leotard," },
+        {"name": "ハロウィン", "value": "halloween costume," },
+        {"name": "ミイラ", "value": "mummy costume," }
+      ]
+    },
+    "ファンタジー":{
+      "魔法使い":[
+        {"name": "セット", "value": "mage, mage hat, cloak, long boots,"},
+        {"name": "基本", "value": "mage,"},
+        {"name": "魔法使い帽子", "value": "mage hat,"},
+        {"name": "マント", "value": "cloak,"},
+        {"name": "ブーツ", "value": "long boots,"}
+      ],
+      "騎士":[
+        {"name": "セット", "value": "knight, armor,"},
+        {"name": "基本", "value": "knight,"},
+        {"name": "鎧", "value": "armor,"}
+      ],
+      "僧侶":[
+        {"name": "セット", "value": "priest, priest hat,"},
+        {"name": "僧侶", "value": "priest,"},
+        {"name": "僧侶の帽子", "value": "priest hat,"}
+      ],
+      "商人":[
+        {"name": "セット", "value": "merchant, turban, sleeveless crop top, baggy pants,"},
+        {"name": "基本", "value": "merchant,"},
+        {"name": "ターバン", "value": "turban,"},
+        {"name": "袖なしクロップ丈のトップス", "value": "sleeveless crop top,"},
+        {"name": "ハギーパンツ", "value": "baggy pants,"}
+      ],
+      "踊り子":[
+        {"name": "セット", "value": "dancer, accessory, jewelry, arabian outfit, bare belly, veil,"},
+        {"name": "基本", "value": "dancer,"},
+        {"name": "アクセサリー", "value": "accessory,"},
+        {"name": "宝石", "value": "jewelry,"},
+        {"name": "アラビアの衣装", "value": "arabian outfit,"},
+        {"name": "お腹があらわになる", "value": "bare belly,"},
+        {"name": "ヴェール", "value": "veil,"}
+      ],
+      "海賊":[
+        {"name": "セット", "value": "pirate, pirate hat, pirate clothes, boots,"},
+        {"name": "基本", "value": "pirate,"},
+        {"name": "海賊の帽子", "value": "pirate hat,"},
+        {"name": "海賊の服", "value": "pirate clothes,"},
+        {"name": "ブーツ", "value": "boots,"}
+      ]
+    },
+    "トップス": {
+      "トップスカラー":[
+        {"name": "純白", "value": "white "},
+        {"name": "漆黒", "value": "black "},
+        {"name": "ネイビー", "value": "navy blue "},
+        {"name": "ベージュ", "value": "beige "},
+        {"name": "ピンク", "value": "pink "},
+        {"name": "サックスブルー", "value": "light blue "},
+        {"name": "ラベンダー", "value": "lavender "},
+        {"name": "ミントグリーン", "value": "mint green "},
+        {"name": "パステルイエロー", "value": "pale yellow "},
+        {"name": "赤", "value": "red "},
+        {"name": "ワインレッド", "value": "wine red "},
+        {"name": "ショッキングピンク", "value": "hot pink "},
+        {"name": "オレンジ", "value": "orange "},
+        {"name": "グレー", "value": "gray "}
+      ],
+      "シャツ・基本タイプ": [
+        { "name": "シャツ", "value": "shirt," },
+        { "name": "アンダーシャツ", "value": "undershirt," },
+        { "name": "Tシャツ", "value": "t-shirt," },
+        { "name": "体操服", "value": "gym shirt," },
+        { "name": "ドレスシャツ/Yシャツ", "value": "dress shirt," },
+        { "name": "かりゆしウェア", "value": "kariyushi shirt," },
+        { "name": "ポロシャツ", "value": "polo shirt," },
+        { "name": "アロハシャツ", "value": "hawaiian shirt," },
+        { "name": "セーラーシャツ", "value": "sailor shirt," },
+        { "name": "ロングシャツ", "value": "long shirt," },
+        { "name": "ホルターシャツ", "value": "halter shirt," },
+        { "name": "バンドシャツ", "value": "band shirt," },
+        { "name": "タートルネックシャツ", "value": "turtleneck shirt," },
+        { "name": "コンプレッションシャツ", "value": "compression shirt," }
+      ],
+      "シャツ・構造と状態": [
+        { "name": "襟付きシャツ", "value": "collared shirt," },
+        { "name": "袖なしシャツ", "value": "sleeveless shirt," },
+        { "name": "オフショルダーシャツ", "value": "off-shoulder shirt," },
+        { "name": "クロップドシャツ（丈短）", "value": "cropped shirt," },
+        { "name": "前開きシャツ", "value": "open shirt," },
+        { "name": "ボタンを留めてないシャツ", "value": "unbuttoned shirt," },
+        { "name": "裾を結んだシャツ", "value": "tied shirt," },
+        { "name": "タックイン（中に入れる）", "value": "shirt tucked in," },
+        { "name": "おっぱい強調", "value": "tented shirt," },
+        { "name": "濡れたシャツ", "value": "wet shirt," },
+        { "name": "透け感のあるシャツ", "value": "see-through shirt," }
+      ],
+      "セーター・ニット": [
+        { "name": "セーター/ニット", "value": "sweater," },
+        { "name": "リブセーター", "value": "ribbed sweater," },
+        { "name": "オフショルダーセーター", "value": "off-shoulder sweater," },
+        { "name": "童貞を殺すセーター", "value": "virgin killer sweater," },
+        { "name": "アランセーター", "value": "aran sweater," },
+        { "name": "セーターベスト", "value": "sweater vest," },
+        { "name": "胸元が開いたセーター", "value": "open-chest sweater," },
+        { "name": "タートルネックセーター", "value": "turtleneck sweater," },
+        { "name": "袖なしセーター", "value": "sleeveless sweater," }
+      ],
+      "トップス全般": [
+        { "name": "ブラウス", "value": "blouse," },
+        { "name": "パーカー", "value": "hoodie," },
+        
+        { "name": "タンクトップ", "value": "tank top," },
+        { "name": "クロップトップ（へそ出し）", "value": "crop top," },
+        { "name": "キャミソール", "value": "camisole," },
+        { "name": "チューブトップ", "value": "tube top," },
+        { "name": "ビスチェ", "value": "bustier," },
+        { "name": "ホルターネック", "value": "halterneck," }
+      ]
+    },
+    "ボトムス":{
+      "ボトムスカラー":[
+        {"name": "純白", "value": "white "},
+        {"name": "漆黒", "value": "black "},
+        {"name": "ネイビー", "value": "navy blue "},
+        {"name": "ベージュ", "value": "beige "},
+        {"name": "ピンク", "value": "pink "},
+        {"name": "サックスブルー", "value": "light blue "},
+        {"name": "ラベンダー", "value": "lavender "},
+        {"name": "ミントグリーン", "value": "mint green "},
+        {"name": "パステルイエロー", "value": "pale yellow "},
+        {"name": "赤", "value": "red "},
+        {"name": "ワインレッド", "value": "wine red "},
+        {"name": "ショッキングピンク", "value": "hot pink "},
+        {"name": "オレンジ", "value": "orange "},
+        {"name": "グレー", "value": "gray "}
+      ],
+      "スカート": [
+        { "name": "スカート", "value": "skirt," },
+        { "name": "ミニスカート", "value": "miniskirt," },
+        { "name": "ロングスカート", "value": "long skirt," },
+        { "name": "プリーツスカート", "value": "pleated skirt," },
+        { "name": "チェックスカート", "value": "plaid skirt," },
+        { "name": "タイトスカート/ペンシルスカート", "value": "pencil skirt," },
+        { "name": "マイクロミニスカート", "value": "microskirt," },
+        { "name": "デニムスカート", "value": "denim skirt," },
+        { "name": "レザースカート", "value": "leather skirt," },
+        { "name": "フレアスカート", "value": "flared skirt," },
+        { "name": "ティアードスカート", "value": "tiered skirt," },
+        { "name": "ハイウエストスカート", "value": "high-waist skirt," },
+        { "name": "サスペンダースカート", "value": "suspender skirt," },
+        { "name": "ラップスカート", "value": "wrap skirt," }
+      ],
+      "ズボン・ショートパンツ": [
+        { "name": "ズボン/パンツ", "value": "pants," },
+        { "name": "ショートパンツ", "value": "shorts," },
+        { "name": "ホットパンツ", "value": "hotpants," },
+        { "name": "ジーンズ/デニム", "value": "jeans," },
+        { "name": "カーゴパンツ", "value": "cargo pants," },
+        { "name": "スウェットパンツ", "value": "sweatpants," },
+        { "name": "トラックパンツ/ジャージ下", "value": "track pants," },
+        { "name": "レギンス/スパッツ", "value": "leggings," },
+        { "name": "サイクリングショーツ", "value": "cycling shorts," },
+        { "name": "ブルマ", "value": "bloomers," },
+        { "name": "カプリパンツ", "value": "capri pants," },
+        { "name": "ベルボトム", "value": "bell-bottoms," },
+        { "name": "オーバーオール", "value": "overalls," }
+      ],
+      "ボトムスの状態・ディテール": [
+        { "name": "ズボンの裾を捲る", "value": "rolled up pants," },
+        { "name": "ショートパンツのボタンを外す", "value": "unbuttoned shorts," },
+        { "name": "スカートをめくる", "value": "skirt lift," },
+        { "name": "スカートを掴む", "value": "skirt tug," },
+        { "name": "ローライズ", "value": "lowleg," }
+      ]
+    },
+    "靴下・タイツ":{
+      "靴下・タイツカラー":[
+        {"name": "純白", "value": "white "},
+        {"name": "漆黒", "value": "black "},
+        {"name": "ネイビー", "value": "navy blue "},
+        {"name": "ベージュ", "value": "beige "},
+        {"name": "ピンク", "value": "pink "},
+        {"name": "サックスブルー", "value": "light blue "},
+        {"name": "ラベンダー", "value": "lavender "},
+        {"name": "ミントグリーン", "value": "mint green "},
+        {"name": "パステルイエロー", "value": "pale yellow "},
+        {"name": "赤", "value": "red "},
+        {"name": "ワインレッド", "value": "wine red "},
+        {"name": "ショッキングピンク", "value": "hot pink "},
+        {"name": "オレンジ", "value": "orange "},
+        {"name": "グレー", "value": "gray "}
+      ],
+      "靴下・レッグウェア": [
+        { "name": "靴下/ソックス", "value": "socks," },
+        { "name": "アンクルソックス", "value": "ankle socks," },
+        { "name": "ニーソックス", "value": "knee-high socks," },
+        { "name": "オーバーニーソックス", "value": "over-knee socks," },
+        { "name": "サイハイソックス", "value": "thighhighs," },
+        { "name": "ルーズソックス", "value": "loose socks," },
+        { "name": "タイツ", "value": "tights," },
+        { "name": "パンティストッキング", "value": "pantyhose," },
+        { "name": "フィッシュネット/網タイツ", "value": "fishnets," },
+        { "name": "ガーターストッキング", "value": "garter straps," },
+        { "name": "レッグウォーマー", "value": "leg warmers," },
+        { "name": "フリルソックス", "value": "frilled socks," },
+        { "name": "黒タイツ", "value": "black tights," },
+        { "name": "白タイツ", "value": "white tights," }
+      ],
+      "素足・状態": [
+        { "name": "素足", "value": "barefoot," },
+        { "name": "裸足で歩く", "value": "walking barefoot," },
+        { "name": "靴を脱いでいる", "value": "shoes removed," },
+        { "name": "片方だけの靴", "value": "single shoe," }
+      ]
+    },
+    "靴・足元": {
+      "靴カラー":[
+        {"name": "純白", "value": "white "},
+        {"name": "漆黒", "value": "black "},
+        {"name": "ネイビー", "value": "navy blue "},
+        {"name": "ベージュ", "value": "beige "},
+        {"name": "ピンク", "value": "pink "},
+        {"name": "サックスブルー", "value": "light blue "},
+        {"name": "ラベンダー", "value": "lavender "},
+        {"name": "ミントグリーン", "value": "mint green "},
+        {"name": "パステルイエロー", "value": "pale yellow "},
+        {"name": "赤", "value": "red "},
+        {"name": "ワインレッド", "value": "wine red "},
+        {"name": "ショッキングピンク", "value": "hot pink "},
+        {"name": "オレンジ", "value": "orange "},
+        {"name": "グレー", "value": "gray "}
+        ],
+      "靴・シューズ": [
+        { "name": "靴", "value": "shoes, "},
+        { "name": "スニーカー", "value": "sneakers, "},
+        { "name": "ブーツ", "value": "boots, "},
+        { "name": "ローファー", "value": "loafers, "},
+        { "name": "ハイヒール", "value": "high heels, "},
+        { "name": "パンプス", "value": "pumps, "},
+        { "name": "メリージェーン", "value": "mary janes, "},
+        { "name": "フラットシューズ", "value": "flats, "},
+        { "name": "上履き", "value": "uwabaki, "},
+        { "name": "プラットフォーム/厚底", "value": "platform footwear, "},
+        { "name": "革靴", "value": "leather shoes, "},
+        { "name": "バレエシューズ", "value": "ballet shoes, "},
+        { "name": "編み上げブーツ", "value": "laced boots, "},
+        { "name": "サイハイブーツ", "value": "thighhigh boots, "}
+      ],
+      "サンダル・スリッパ・和装": [
+        { "name": "サンダル", "value": "sandals, "},
+        { "name": "ビーチサンダル", "value": "flip-flops, "},
+        { "name": "スリッパ", "value": "slippers, "},
+        { "name": "ルームシューズ", "value": "room shoes, "},
+        { "name": "下駄", "value": "geta, "},
+        { "name": "草履", "value": "zouri, "},
+        { "name": "足袋", "value": "tabi, "}
+      ]
+    },
+    "水着":{
+      "色":[
+        {"name": "白", "value": "white "},
+        {"name": "黒", "value": "black "},
+        {"name": "ピンク", "value": "pink "},
+        {"name": "青", "value": "blue "},
+        {"name": "紺", "value": "navy "},
+        {"name": "緑", "value": "green "},
+        {"name": "紫", "value": "purple "},
+        {"name": "金", "value": "gold "}
+      ],
+      "形":[
+        {"name": "水着", "value": "swimsuit, "},
+        {"name": "水玉模様", "value": "polka dot bikini, "},
+        {"name": "ストライプ", "value": "stripe bikini, "},
+        {"name": "チェック柄", "value": "checkered bikini, "},
+        {"name": "スクール水着", "value": "school swimsuit, "},
+        {"name": "競泳水着", "value": "competition swimsuit, "},
+        {"name": "セーラー水着", "value": "sailor swimsuit, "},
+        {"name": "シンプルビキニ", "value": "bikini, "},
+        {"name": "紐ビキニ", "value": "side-tie bikini, "},
+        {"name": "フリルビキニ", "value": "frilled bikini, "},
+        {"name": "スポーツビキニ", "value": "sports bikini, "},
+        {"name": "ハイレグ水着", "value": "highleg swimsuit, "},
+        {"name": "トングビキニ", "value": "thong bikini, "},
+        {"name": "マイクロビキニ", "value": "micro bikini, "},
+        {"name": "パレオ", "value": "sarong, "},
+        {"name": "ラッシュガード", "value": "rash guard, "}
+      ]
+    },
+    "衣装の動作":{
+"衣装の操作": [
+    {"name": "シャツを捲り上げる", "value": "lifting shirt, "},
+    {"name": "ボタンを外す", "value": "unbuttoning shirt, fingers on buttons, "},
+    {"name": "ブラを捲り上げる", "value": "lifting bra, "},
+    {"name": "ブラを引き下げる", "value": "pulling down bra, "},
+    {"name": "ブラのホックを外す", "value": "unhooking bra, "},
+    {"name": "スカートを捲り上げる", "value": "lifting skirt, showing panties, "},
+    {"name": "スカートを引き下げる", "value": "pulling down skirt, skirt down, "},
+    {"name": "パンティを横にずらす", "value": "pulling panties aside, "},
+    {"name": "パンティのゴムに指を掛ける", "value": "fingers hooked on waistband, about to pull down, "},
+    {"name": "パンティの中に手を入れる", "value": "hand inside panties, reaching inside, "},
+    {"name": "タイツを脱ぐ", "value": "removing tights, pulling down stockings, "},
+    {"name": "タイツを脱ぐ", "value": "removing tights, pulling down stockings, "}
+  ],
+  "衣装の乱れた状態": [
+    {"name": "シャツのボタンが外れている", "value": "unbuttoned shirt, open shirt, messy clothes,", "desc": "ボタンが外され、前がはだけたままの状態。"},
+    {"name": "ブラのストラップが落ちている", "value": "bra strap off shoulder, detached strap,", "desc": "肩紐が腕まで滑り落ちた、しどけない状態。"},
+    {"name": "パンティが横にずれている", "value": "panties aside,"},
+    {"name": "パンティが膝まで下がっている", "value": "panties around knees"},
+    {"name": "パンティが片足に掛かっている", "value": "panties around one leg,"},
+    {"name": "パンティが足首にある", "value": "panties around ankles,"},
+    {"name": "お尻に食い込んでいる", "value": "ass wedgie"},
+    {"name": "自分で食い込ませある", "value": "ass wedgie"}
+      ]
+    }
+  },
+  "動作": {
+    "手・腕": {
+      "ハンドジェスチャー": [
+        {"name": "ピース", "value": "v sign,"},
+        {"name": "ダブルピース", "value": "double v sign,"},
+        {"name": "目の上でピース", "value": "v over eye,"},
+        {"name": "口の上でピース", "value": "v over mouth,"},
+        {"name": "グッド", "value": "thumbs up,"},
+        {"name": "バッド", "value": "thumbs down,"},
+        {"name": "OKサイン", "value": "ok sign,"},
+        {"name": "手でハート", "value": "heart hands,"},
+        {"name": "指でハート", "value": "finger heart,"},
+        {"name": "4本の指でハート", "value": "4-finger heart hands,"},
+        {"name": "バンザイ", "value": "\\o/,"},
+        {"name": "指でフレームを作る", "value": "finger frame,"},
+        {"name": "人差し指を立てる", "value": "index finger raised,"},
+        {"name": "人差し指合わせ", "value": "index fingers together,"},
+        {"name": "お嬢様ポーズ、高笑い", "value": "ojou-sama pose,"},
+        {"name": "うさぎのポーズ", "value": "rabbit pose,"},
+        {"name": "猫の手", "value": "paw pose,"},
+        {"name": "ガオー", "value": "claw pose,"},
+        {"name": "手を振る", "value": "waving,"},
+        {"name": "腕組み", "value": "crossed arms,"},
+        {"name": "手を開く", "value": "open hand,"},
+        {"name": "両手を組み合わせる", "value": "own hands clasped,"},
+        {"name": "両手を触れ合わせる", "value": "own hands together,"},
+        {"name": "手をすくう形にする", "value": "cupping hands,"},
+        {"name": "目をこする", "value": "rubbing eyes,"},
+        {"name": "手招き", "value": "beckoning, come hither gesture,"},
+        {"name": "唇に指を当てる", "value": "finger on lips, shhh gesture,"}
+      ],
+      "手を上げる動作":[
+        {"name": "片手を上げる", "value": "hand up,"},
+        {"name": "片腕を上げる", "value": "arm up,"},
+        {"name": "両手を上げる", "value": "hands up,"},
+        {"name": "両腕を上げる", "value": "arms up,"}
+      ],
+      "手を伸ばす動作":[
+        {"name": "片腕を前に伸ばす", "value": "outstretched arm,"},
+        {"name": "両腕を前に伸ばす", "value": "outstretched arms,"},
+        {"name": "うきうき", "value": "w arms,"},
+        {"name": "カメラに向かって", "value": "reaching towards viewer,"}
+      ],
+      "休息・寄りかかり動作": [
+        { "name": "頬杖", "value": "head rest," },
+        { "name": "寄りかかる", "value": "reclining," },
+        { "name": "前かがみ", "value": "leaning forward," },
+        { "name": "肘を置く", "value": "elbow rest," },
+        { "name": "後ろに傾く", "value": "leaning back," },
+        { "name": "横に傾く", "value": "leaning to the side," },
+        { "name": "壁に寄りかかる", "value": "leaning on wall," },
+        { "name": "テーブルに寄りかかる", "value": "leaning on table," },
+        { "name": "手すりに寄りかかる", "value": "leaning on rail," }
+      ],
+      "指差し・支持動作": [
+        { "name": "指差し", "value": "pointing," },
+        { "name": "こちらを指差す", "value": "pointing at viewer," },
+        { "name": "自分を指差す", "value": "pointing at self," },
+        { "name": "上を指差す", "value": "pointing up," },
+        { "name": "腕を何かに乗せる", "value": "arm support," }
+      ]
+    },
+    "足":{
+      "足の指":[
+        {"name": "指を丸める", "value": "toe scrunch,"}
+      ]
+    },
+    "エロ動作":{
+      "フェラ系":[
+        {"name": "頭を掴まれる", "value": "head grab,"},
+        {"name": "フェラ仕草", "value": "fellatio gesture,"},
+        {"name": "口開け射精待ち", "value": "oral invitation,"},
+        {"name": "指フェラ（指を吸う）", "value": "self sucking finger, self finger in mouth,"},
+        {"name": "指を舐める", "value": "self licking finger,"},
+        {"name": "口に指を入れる", "value": "self-finger in mouth,"},
+        {"name": "口に指を入れられる", "value": "boy’s finger in mouth,"},
+        {"name": "手で口を隠す", "value": "hand over mouth,"},
+        {"name": "手を頭の後ろに回す", "value": "arms behind head, "},
+        {"name": "頭のけぞり", "value": "head back, "},
+        {"name": "のけぞり", "value": "arched back, "},
+        {"name": "手を頭の後ろに回す", "value": "leaning back, "}
+      ],
+      "まんこ系":[
+        {"name": "片手広げ", "value": "one-hand pussy spread,"},
+        {"name": "両手広げ", "value": "two-hands pussy spread,"},
+        {"name": "くぱぁ（開脚露出）", "value": "spread pussy, spread legs,"}
+      ],
+      "お尻系":[
+        {"name": "欠の穴を開く", "value": "spread ass,"}
+      ],
+      "おっぱい系":[
+        {"name": "おっぱいを強調する", "value": "leaning forward,"},
+        {"name": "おっぱいを腕で支える", "value": "breasts hold with arms,"},
+        {"name": "おっぱいを腕で寄せる", "value": "v arms,"}
+      ],
+      "足開く系":[
+        {"name": "M字開脚", "value": "m-shaped leg spread, sitting, legs apart, looking at viewer,"},
+        {"name": "股間を強調する座り方", "value": "suggestive sitting, spread legs slightly,"},
+        {"name": "まんぐり返し", "value": "spread legs, legs up, holding legs,"},
+        {"name": "足を広げて持ち上げる", "value": "spread legs, legs up,"},
+        {"name": "両足を揃えて持ち上げる", "value": "legs up, legs together,"}
+      ],
+      "隠す":[
+        {"name": "指で乳首隠す", "value": "covering nipples,"},
+        {"name": "タオルで隠す", "value": "self-covering breasts hand towle,"},
+        {"name": "手で胸を隠す（両手）", "value": "self-covering breasts hands,"},
+        {"name": "手で胸を隠す（片手）", "value": "self-covering breasts hand,"},
+        {"name": "手で股間を隠す（両手）", "value": "self-covering pussy hands,"},
+        {"name": "手で股間を隠す（片手）", "value": "self-covering pussy hand,"}
+      ]
+    },
+    "日常動作":{
+      "日常の仕草・ポーズ": [
+        {"name": "腰に手を当てる", "value": "hands on hips, "},
+        {"name": "頬杖をつく", "value": "hand on cheek, leaning, "},
+        {"name": "襟元に手を添える", "value": "hand on collar, touching neck, "},
+        {"name": "教科書を抱える", "value": "hugging books to chest, walking, school corridor, "},
+        {"name": "背伸び・ストレッチ", "value": "stretching arms up, "},
+        {"name": "スマホをチェック", "value": "looking at smartphone, "},
+        {"name": "ドリンクを飲む", "value": "drinking through a straw, "},
+        {"name": "料理をする", "value": "cooking, wearing apron, holding kitchen utensil, "},
+        {"name": "読書に没頭", "value": "reading a book, "},
+        {"name": "傘を差す", "value": "holding umbrella, rainy day, "},
+        {"name": "勉強", "value": "studying, pen, note, "}
+      ],
+      "ハプニング": [
+        {"name": "突風（スカート捲れ）", "value": "strong wind, skirt flip, skirt lift, panties visible, embarrassment, "},
+        {"name": "捲れを押さえる", "value": "holding skirt down, pressing hands on skirt, struggling, "},
+        {"name": "シャツのボタンが弾ける", "value": "button pop, bursting shirt, too tight, cleavage visible, surprised, "}
+      ],
+      "ボディライン": [
+        {"name": "S字カーブ", "value": "S-curve, "},
+        {"name": "胸を突き出す", "value": "chest out, thrusting chest forward, arching back, "},
+        {"name": "お尻を突き出す（尻突き）", "value": "arching back, sticking out butt, glute focus, "},
+        {"name": "体を横に傾ける", "value": "leaning sideways, body tilt, off-balance pose, "}
+      ],
+      "四つん這い・床のポーズ": [
+        {"name": "四つん這い", "value": "on all fours,"},
+        {"name": "突き出し四つん這い", "value": "all fours, leaning forward,"},
+        {"name": "肘つき四つん這い", "value": "on all fours, elbows on floor, looking at viewer,"},
+        {"name": "横たわる四つん這い", "value": "on all fours, leaning side, looking back,"}
+      ],
+      "?":[
+        {"name": "挑発ポーズ", "value": "seductive pose"},
+        {"name": "虫歯ポーズ", "value": "hand on cheek, tilting head,"},
+        {"name": "自撮り", "value": "selfie,"},
+        {"name": "手を後ろで組んで反る", "value": "hands behind back, arching back, leaning forward,"},
+        {"name": "首をかしげる", "value": "tilting head, curious expression, looking at viewer,"},
+        {"name": "指先を頬に当てる", "value": "index finger on cheek, thinking pose,"},
+        {"name": "股座からの視点", "value": "between legs"}
+      ]
+    },
+    "座り動作":{
+      "しゃがみ":[
+        {"name": "足を開いてしゃがむ", "value": "squatting, spread legs,"},
+        {"name": "足を閉じてしゃがむ", "value": "squatting,"},
+        {"name": "中腰しゃがみ", "value": "half-squat, crouching, knees bent,"},
+        {"name": "しゃがみ込み", "value": "squatting, deep squat, crouching,"},
+        {"name": "椅子に逆向き", "value": "sitting backward on a chair, straddling,"},
+        {"name": "浅く腰掛ける", "value": "sitting on the edge of the seat,"},
+        {"name": "ぺたん座り", "value": "w-sitting, sitting on floor, between heels,"},
+        {"name": "机に突っ伏す", "value": "slumping over desk, sleeping on arm,"},
+        {"name": "足を投げ出す", "value": "sitting on floor, legs spread/extended,"}
+      ],
+      "座る": [
+        {"name": "座る", "value": "sitting, " },
+        {"name": "あぐら", "value": "indian style, "},
+        {"name": "足を組む", "value": "crossed legs, "},
+        {"name": "立て膝", "value": "one knee up, "},
+        {"name": "膝を抱える", "value": "sitting, knees up, "},
+        {"name": "体育座り", "value": "sitting, fetal position, "},
+        {"name": "うずくまり", "value": "crouching, "},
+        {"name": "正座", "value": "seiza, "},
+        {"name": "女の子座り（アヒル座り）", "value": "wariza, "},
+        {"name": "横座り", "value": "sideways sit, "},
+        {"name": "片膝を立てて座る", "value": "sitting on floor, one knee up, "},
+        {"name": "カウンターに座る", "value": "sitting on counter, legs dangling, "},
+        {"name": "両手を股に挟んで座る", "value": "hands between legs, sitting, "},
+        {"name": "もたれかかって座る", "value": "leaning back, "},
+        {"name": "足を組んで座る", "value": "crossed legs, sitting, "},
+        {"name": "足を広げて座る", "value": "spread legs, sitting, "},
+        {"name": "体育座り（崩し）", "value": "sitting, hugging knees, looking at viewer, "}
+      ]
+    },
+    "寝転ぶ":{
+      "寝転ぶ": [
+        {"name": "寝そべる", "value": "lying, "},
+        {"name": "腕で支えて寝そべる", "value": "lying arm support,"},
+        {"name": "うつ伏せ", "value": "lying on stomach, "},
+        {"name": "仰向け", "value": "lying on back, "},
+        {"name": "横たわる（寝そべり）", "value": "lying on side, seductive curve, "},
+        {"name": "仰向け（誘惑）", "value": "lying on back, legs apart, hand on chest, "},
+        {"name": "うつ伏せ足バタバタ", "value": "lying on stomach, kicking feet, looking at viewer, "},
+        {"name": "テーブルに横たわる", "value": "lying on table, "},
+        {"name": "机に横たわる", "value": "lying on desk, "}
+      ],
+      "睡眠": [
+        {"name": "仰向け（無防備）", "value": "lying on back, "},
+        {"name": "丸まって眠る", "value": "fetal position, "},
+        {"name": "横向きで眠る", "value": "lying on side, "},
+        {"name": "うつ伏せで眠る", "value": "lying on stomach, "},
+        {"name": "抱き枕を抱く", "value": "hugging pillow, "},
+        {"name": "布団に潜り込む", "value": "under blanket, "},
+        {"name": "机で居眠り", "value": "sleeping at desk, arms folded, "}
+      ]
+    },
+    "立ち動作":{
+      "立ち・壁を使ったポーズ": [
+        {"name": "片足立ち", "value": "standing on one leg, "},
+        {"name": "片膝立ち", "value": "kneeling on one knee, seductive pose, "},
+        {"name": "内また", "value": "knees together feet apart, "},
+        {"name": "膝立ち", "value": "kneeling, "},        
+        {"name": "片足を上げる", "value": "leg up, "},
+        {"name": "壁ドン・寄りかかり", "value": "leaning against wall, seductive expression, "},
+        {"name": "前屈み（強調）", "value": "leaning forward, "},
+        {"name": "振り返り", "value": "looking back over shoulder, "}
+      ],
+      "基本ポーズ": [
+        {"name": "立つ", "value": "standing, "},
+        {"name": "歩く", "value": "walking, "},
+        {"name": "走る", "value": "running, "},
+        {"name": "スキップ", "value": "skipping, "},
+        {"name": "ジャンプ", "value": "jumping, "},
+        {"name": "キック", "value": "kicking, "},
+        {"name": "ダッシュ", "value": "dashing, "},
+        {"name": "パンチ", "value": "punching, "},
+        {"name": "着地", "value": "landing, "},
+        {"name": "内股", "value": "knees together feet apart, "}
+      ],
+      "道具を使う":[
+        {"name": "電話する", "value": "talking on mobile phone, "}
+      ]
+    }
+  },
+  "セックス・奉仕":{
+    "ちんぽ奉仕": {
+      "基本": [
+        {"name": "フェラチオ", "value": "fellatio, "},
+        {"name": "イマラチオ", "value": "irrumatio, "},
+        {"name": "喉の奥まで", "value": "deepthroat, "},
+        {"name": "ちんこ舐め", "value": "licking penis, "},
+        {"name": "玉舐め", "value": "licking testicles, "},
+        {"name": "手コキ", "value": "hand job, "},
+        {"name": "手コキ", "value": "one hand handjob, "},
+        {"name": "足コキ", "value": "foot job, "},
+        {"name": "靴コキ", "value": "shoe job, "},
+        {"name": "パイズリ", "value": "paizuri, "},
+        {"name": "衣服越しパイズリ", "value": "paizuri under clothes, "},
+        {"name": "馬乗りパイズリ", "value": "straddling paizuri, "},
+        {"name": "授乳手コキ", "value": "breast sucking handjob, "},
+        {"name": "ごっくん", "value": "gokkun, "},
+        {"name": "亀頭責め", "value": "glans job, "},
+        {"name": "射精後攻め", "value": "post orgasm torture, "},
+        {"name": "股間踏みつけ", "value": "crotch stomping, "}
+      ],
+      "手コキ": [
+        {"name": "抱きしめ", "value": "cuddling hand job, "},
+        {"name": "両手", "value": "double hand job, "},
+        {"name": "ズボンの上から", "value": "hand job over clothes, "},
+        {"name": "背後から", "value": "reach-around, hand job, "},
+        {"name": "疑似", "value": "simulated hand job, "},
+        {"name": "素振り", "value": "hand job gesture, "}
+      ],
+      "足コキ": [
+        {"name": "両足", "value": "two-footed foot job, "},
+        {"name": "疑似足", "value": "simulated foot job, "},
+        {"name": "素股", "value": "thigh sex, "}
+      ]
+    },
+    "まんこ奉仕": {
+      "基本": [
+        {"name": "手マン", "value": "fingering, "},
+        {"name": "手マン", "value": "fingering another, "},
+        {"name": "クンニ", "value": "cunnilingus, "}
+      ],
+      "手コキ": [
+        {"name": "抱きしめ", "value": "cuddling hand job, "}
+      ],
+      "足コキ": [
+        {"name": "両足", "value": "two-footed foot job, "}
+      ]
+    },
+    "チンポ": {
+      "アイテム":[
+        {"name": "ゴム着用", "value": "condom on penis, "},
+        {"name": "チンポの影", "value": "penis shadow, "},
+        {"name": "透明チンポ", "value": "penis shadow, "},
+        {"name": "自分でシコる", "value": "male masturbation"}
+      ],
+      "サイズ": [
+        {"name": "巨大（ヒュージ）", "value": "huge penis, massive penis, "},
+        {"name": "太い（極太）", "value": "thick penis, girthy, "},
+        {"name": "長い", "value": "long penis, "},
+        {"name": "小ぶり・控えめ", "value": "small penis, "}
+      ],
+      "形状": [
+        {"name": "血管浮き", "value": "veiny penis, pulsating, "},
+        {"name": "反り（上向き）", "value": "curved penis, upward curve, "},
+        {"name": "包茎", "value": "uncircumcised, foreskin, "},
+        {"name": "勃起（カチカチ）", "value": "erect penis, rock hard, "},
+        {"name": "半勃ち", "value": "semi-erect penis, "},
+        {"name": "萎え（平常時）", "value": "flaccid penis, "}
+      ],
+      "分泌物": [
+        {"name": "先走り汁（カウパー）", "value": "precum, precum leaking, "}
+      ]
+    },
+    "射精・精液": {
+      "射精・精液": [
+        {"name": "精液", "value": "cum, "},
+        {"name": "射精シーン", "value": "cumshot, "},
+        {"name": "大量射精", "value": "excessive cum, "},
+        {"name": "遠射・飛び散る精液", "value": "Projectile cum, "},
+        {"name": "マンコから出る精液", "value": "cum drip, "}
+      ],
+      "特定の部位への射精": [
+        {"name": "中出し", "value": "creampie, "},
+        {"name": "膣内射精", "value": "cum in pussy, "},
+        {"name": "秘部の精液", "value": "pussy cum, "},
+        {"name": "秘部へのぶっかけ", "value": "cum on pussy, "},
+        {"name": "口内射精", "value": "cum in mouth, "},
+        {"name": "舌上射精", "value": "cum on tongue, "},
+        {"name": "胸への射精", "value": "cum on breasts, "},
+        {"name": "衣服への射精", "value": "cum on clothes, "},
+        {"name": "髪への射精", "value": "cum on hair, "},
+        {"name": "顔射", "value": "facial, "},
+        {"name": "顔への付着", "value": "cum on face, "},
+        {"name": "頭部への射精", "value": "cum on head, "},
+        {"name": "お尻への射精", "value": "cum on ass, "},
+        {"name": "アナル中出し", "value": "cum in anus, "},
+        {"name": "足への射精", "value": "cum on feet, "}
+      ],
+      "その他": [
+        {"name": "ぶっかけ", "value": "bukkake, "},
+        {"name": "精液まみれ（肉便器）", "value": "cumdump, "}
+      ]
+    },
+    "セックス": {
+      "体位": [
+        {"name": "正常位", "value": "sex, missionary, "},
+        {"name": "対面座位", "value": "sex, upright straddle, "},
+        {"name": "背面座位", "value": "sex, reverse upright straddle, "},
+        {"name": "側位", "value": "sex, spooning, "},
+        {"name": "足上げ側位", "value": "sex, spooning, leg up, "},
+        {"name": "羽交い絞めセックス", "value": "sex, full nelson, "},
+        {"name": "騎乗位", "value": "sex, ccowgirl position, "},
+        {"name": "背面騎乗位", "value": "sex, reverse cowgirl position, "},
+        {"name": "後背位", "value": "sex, doggystyle, "},
+        {"name": "立バック", "value": "sex from behind, standing doggy, "},
+        {"name": "寝バック", "value": "sex, prone bone, "},
+        {"name": "立ちセックス", "value": "sex, standing sex, face to face, "},
+        {"name": "立ち後背位", "value": "sex, standing doggy, "},
+        {"name": "ちんぐり騎乗位", "value": "sex, amazon position, "},
+        {"name": "駅弁", "value": "sex, suspended congress, "},
+        {"name": "背面駅弁", "value": "sex, reverse suspended congress, "},
+        {"name": "アナルセックス", "value": "sex, anus sex, "}
+      ],
+      "動作":[
+        {"name": "手をつなぐ", "value": "holding hands, "},
+        {"name": "片手を後ろに付く", "value": "one hand behind back, "},
+        {"name": "両手を後ろに付く", "value": "hands behind back, "},
+        {"name": "手を男子の脚に", "value": "hand on boy leg, "},
+        {"name": "しゃがみ騎乗い", "value": "squatting, "},
+        {"name": "尻掴み", "value": "ass grab, "},
+        {"name": "膝に座る", "value": "sitting on lap, "},
+        {"name": "だいしゅきホールド", "value": "leg lock, "},
+        {"name": "腕を首に回す", "value": "arms around neck, "}
+      ],
+      "挿入深度・接合部": [
+        {"name": "浅い挿入（先端だけ）", "value": "shallow penetration, tip only, just the head, "},
+        {"name": "半分まで（中間）", "value": "halfway inserted, partial penetration, "},
+        {"name": "外に出ている部分の強調", "value": "visible penis, shaft visible, "},
+        {"name": "入り口の広がり・緊張", "value": "stretched opening, skin tension, pussy stretching, "},
+        {"name": "結合部のアップ", "value": "insertion close-up, genital focus, "}
+      ]
+    },
+    "舐める・揉む":{
+      "舐める":[
+        {"name": "乳首吸う", "value": "breast sucking, "},
+        {"name": "乳首吸う", "value": "nipples licking, "},
+        {"name": "両手で顔隠し", "value": "hiding face with both hands, shy, "},
+        {"name": "片手で顔隠し", "value": "hiding face with one hand, embarassed, "},
+        {"name": "足舐め", "value": "licking foot, "},
+      {"name": "足舐め", "value": "licking armpit, "}
+      ],
+      "揉む":[
+        {"name": "後ろ乳揉み", "value": "breast grab from behind, "},
+        {"name": "乳揉み", "value": "breast grab from front, "},
+        {"name": "横から乳揉み", "value": "breast grab from side, "},
+        {"name": "横から乳揉み", "value": "nipple stimulation, "}
+      ]
+    }
+  },
+  "性癖":{
+    "おしっこ・おもらし": {
+      "おしっこ": [
+        {"name": "おしっこ", "value": "peeing, "},
+        {"name": "噴射", "value": "spraying pee, "},
+        {"name": "スカートを捲って", "value": "lifting skirt, peeing, "},
+        {"name": "しゃがみ込み", "value": "squatting, peeing, "},
+        {"name": "水たまり", "value": "urine puddle, "},
+        {"name": "尿の流れ", "value": "urine streame, "},
+        {"name": "おもらし", "value": "peeing self, "},
+        {"name": "水に放尿", "value": "peeing in water, "}
+      ],
+        "トイレの姿勢（洋式・和式）": [
+        {"name": "洋式トイレ（座り）", "value": "sitting on toilet, toilet seat, legs spread, panties around ankles, "},
+        {"name": "和式トイレ（中腰・しゃがみ）", "value": "squatting, deep squat, squat toilet, looking down, "}
+      ]
+    },
+    "母乳":{
+      "母乳":[
+      {"name": "母乳", "value": "lactation,"}
+      ]
+    },
+    "愛撫": {
+      "a":[
+        {"name": "後ろから乳揉み", "value": "breast grab from behind, "},
+        {"name": "後ろから", "value": "reach-around, "},
+        {"name": "痴漢", "value": "molestation, "},
+        {"name": "後ろから抱きすくめられる", "value": "being hugged from behind, "},
+        {"name": "ガラスにおっぱい押しつけ", "value": "breasts on glass, "},
+        {"name": "ガラス越し", "value": "hand on glass, "},
+        {"name": "石鹸の泡", "value": "soap bubbles, "},
+        {"name": "乳首の刺激", "value": "nipple stimulation, "},
+        {"name": "乳首ひねり", "value": "nipple tweak, "},
+        {"name": "乳首引っ張り", "value": "nipple pull, "},
+        {"name": "乳首クリップ", "value": "nipple clamps, "},
+        {"name": "壁押し付け", "value": "against wall, "},
+        {"name": "自分で胸揉み", "value": "self fondle, "},
+        {"name": "乳しぼり", "value": "breast squeeze, "}
+      ]
+    },
+    "動作・オナニー": {
+      "オナニー": [
+        {"name": "オナニー", "value": "masturbation, "},
+        {"name": "指入れ", "value": "self-fingering, "},
+        {"name": "テーブル角オナ", "value": "table corner humping, "},
+        {"name": "股こすりつけ", "value": "crotch rub, "},
+        {"name": "異物挿入", "value": "object insertion, "},
+        {"name": "食べ物を挿入", "value": "food insertion, "},
+
+        {"name": "クリトリス愛撫", "value": "clitoris rub, clitoris stimulation, "},
+        {"name": "バイブを押し当てる", "value": "vibrator, pressing toy, "},
+        {"name": "ディルド挿入", "value": "inserting dildo, self-penetration, "},
+        {"name": "電マを押し付ける", "value": "magic wand, intense vibration, "},
+        {"name": "アナルプラグ挿入", "value": "anal plug, anal stimulation, "},
+        {"name": "二本使い（ダブル）", "value": "double penetration, two toys, "},
+        {"name": "トイを咥える", "value": "holding dildo in mouth, toy play, "},
+        {"name": "リモコン操作・翻弄", "value": "remote control toy, teased, "},
+        {"name": "潮吹き", "value": "squirting, "},
+        {"name": "つま先立ち（硬直）", "value": "tiptoes, straining legs,"},
+        {"name": "腰を浮かせる", "value": "arching back, lifting hips,"},
+        {"name": "震える身体", "value": "trembling, vibration effect,"},
+        {"name": "愛液とトイの摩擦", "value": "wet toy, glistening pussy juice,"},
+        {"name": "自撮り自慰", "value": "selfie masturbation, recording,"},
+        {"name": "他者の手でのトイ使用", "value": "another's hand holding toy,"},
+        {"name": "目隠しトイプレイ", "value": "blindfolded, being used by toys,"},
+        {"name": "拘束放置", "value": "bound, vibrating toy left inside,"},
+        {"name": "露出症", "value": "exhibitionism,"},
+        {"name": "積極的な姿勢・行動", "value": "aggressive,"}
+      ]
+    },
+    "SM":{
+      "拘束具": [
+        {"name": "縛り", "value": "bondage,"},
+        {"name": "吊られる", "value": "suspension,"},
+        {"name": "カエル吊り", "value": "frogtie,"},
+        {"name": "拘束されている状態", "value": "bound,"},
+        {"name": "さらし台", "value": "pillory,"},
+        {"name": "固定拘束具", "value": "stationary restraints,"},
+        {"name": "腕を後ろに縛る拘束具", "value": "armbinder,"},
+        {"name": "全身拘束スーツ", "value": "bitchsuit,"},
+        {"name": "身体に密着する全身衣装", "value": "bodysuit,"},
+        {"name": "手袋型拘束具", "value": "bondage mittens,"},
+        {"name": "おまたに食い込むロープ", "value": "crotch rope,"}
+      ],
+      "プレイ用小道具": [
+        {"name": "首輪（カラー）", "value": "collar, leather collar,"},
+        {"name": "手錠", "value": "handcuffs,"},
+        {"name": "猿ぐつわ", "value": "ball gag,"},
+        {"name": "目隠し", "value": "blindfold,"},
+        {"name": "足枷", "value": "shackles,"},
+        {"name": "セックスマシーン", "value": "sex machine,"},
+        {"name": "鞭（ウィップ）", "value": "whip, flogger,"},
+        {"name": "パドル", "value": "spanking paddle,"},
+        {"name": "アイマスク", "value": "eye mask, silk blindfold,"},
+        {"name": "バイブレーター", "value": "vibrator, sex toy,"}
+      ]
+    },
+    "レズビアン": {
+      "百合の関係性": [
+        {"name": "対等な恋人", "value": "romantic couple, equal partnership,"},
+        {"name": "誘惑する先輩と翻弄される後輩", "value": "teasing senior and flustered junior,"}
+      ],
+      "百合の絡みアクション": [
+        {"name": "キス（接吻）", "value": "girls kissing, passionate kiss, locked lips,"},
+        {"name": "首筋へのキス（マーキング）", "value": "kissing neck, biting neck, hickey,"},
+        {"name": "指入れ（パートナーへ）", "value": "fingering partner, fingers inside pussy,"},
+        {"name": "クンニ（愛撫）", "value": "cunnilingus, head between legs,"},
+        {"name": "貝合わせ（磨擦）", "value": "scissoring, tribadism, rubbing pussies together,"},
+        {"name": "バックから抱きしめる", "value": "hugging from behind, intimate embrace,"},
+        {"name": "服の中に手を入れる", "value": "hand under shirt, touching breasts through clothes,"}
+      ]
+    }
+  },
+  "6.【SCENE】環境と演出": {
+    "単色": {
+      "色": [
+        {"name": "薄いピンク一色", "value": "solid pink background, simple background, "},
+        {"name": "薄いブルー一色", "value": "solid sky blue background, simple background, "},
+        {"name": "淡いクリーム色", "value": "solid pale white background, "},
+        {"name": "純白のスタジオ", "value": "solid white background, studio background, bright light, "},
+        {"name": "グラデーション背景", "value": "soft color gradient background, stylish aesthetic, "}
+      ]
+    },
+    "家の中":{
+      "場所":[
+        {"name": "寝室", "value": "bedroom, "},
+        {"name": "ベッド", "value": "bedroom, "},
+        {"name": "リビング", "value": "living room, "},
+        {"name": "台所", "value": "kitchen, "},
+        {"name": "食卓", "value": "dining room, "},
+        {"name": "シャワー", "value": "shower room, shower head, "},
+        {"name": "湯船", "value": "bathroom, white stool, white tile, "},
+        { "name": "玄関口", "value": "doorway, "},
+        {"name": "トイレ", "value": "toilet room, "}
+      ],
+      "小道具":[
+        {"name": "しわくちゃのシーツ", "value": "crumpled sheets,"},
+        {"name": "床に脱ぎ捨てられた服", "value": "clothes on floor,"},
+        {"name": "散らかった机", "value": "messy desk,"},
+        {"name": "お菓子", "value": "snacks,"},
+        {"name": "ペットボトル", "value": "plastic bottles,"},
+        {"name": "スマートフォン", "value": "smartphone,"},
+        {"name": "ノートパソコン", "value": "laptop,"},
+        {"name": "デスクライト", "value": "desk lamp,"},
+        {"name": "本棚", "value": "bookshelves,"},
+        {"name": "ポスター", "value": "posters,"},
+        {"name": "ティッシュ箱", "value": "tissue box,"},
+        {"name": "洗濯かご", "value": "laundry basket,"}
+      ]
+    },
+    "お風呂・バスタイム": {
+      "家庭内・室内の場所": [
+        { "name": "バスルーム/浴室", "value": "bathroom," },
+        { "name": "シャワールーム", "value": "shower room," },
+        { "name": "脱衣所/洗面所", "value": "dressing room," },
+        { "name": "バスタブの中", "value": "in bathtub," },
+        { "name": "シャワーの下", "value": "under shower," },
+        { "name": "ホテルの浴室", "value": "hotel bathroom," },
+        { "name": "温泉", "value": "hot spring," },
+        { "name": "露天風呂", "value": "onsen," },
+        { "name": "岩風呂", "value": "rock bath," },
+        { "name": "檜風呂", "value": "wooden bath," },
+        { "name": "足湯", "value": "footbath," },
+        { "name": "銭湯", "value": "public bath," },
+        { "name": "サウナ", "value": "sauna," },
+        { "name": "雪見風呂", "value": "snowing, outdoor bath," },
+        { "name": "銭湯/公衆浴場", "value": "public bath," }
+      ],
+      "背景のディテール・質感": [
+        { "name": "タイル張りの壁", "value": "tiled wall, " },
+        { "name": "タイル張りの床", "value": "tiled floor, " },
+        { "name": "洗面台", "value": "washbasin, " },
+        { "name": "シャワーカーテン", "value": "shower curtain, " },
+        { "name": "湯気でいっぱいの部屋", "value": "steamy room, " }
+      ],
+      "動作・アクション": [	
+      { "name": "部分的に体が浸水する", "value": "partially submerged, "},
+        { "name": "お風呂に入る", "value": "taking a bath, " },
+        { "name": "シャワーを浴びる", "value": "showering, "},
+        { "name": "体を洗う", "value": "washing body," },
+        { "name": "髪を洗う/シャンプー", "value": "washing hair," },
+        { "name": "背中を流す/洗う", "value": "washing back," },
+        { "name": "浴槽に浸かる", "value": "soaking in bathtub," },
+        { "name": "お湯に触れる", "value": "touching water," },
+        { "name": "タオルで体を拭く", "value": "wiping body," },
+        { "name": "タオルを頭に乗せる", "value": "towel on head," }
+      ],
+      "泡・エフェクト": [
+        { "name": "泡/ソープバブル", "value": "soap bubbles," },
+        { "name": "泡風呂", "value": "bubble bath," },
+        { "name": "石鹸の泡", "value": "soap suds," },
+        { "name": "泡にまみれる", "value": "covered in bubbles," },
+        { "name": "湯気/蒸気", "value": "steam," },
+        { "name": "濡れた肌", "value": "wet skin," },
+        { "name": "滴る水滴", "value": "dripping wet," }
+      ],
+      "温泉アイテム・服装": [
+        { "name": "浴衣", "value": "yukata," },
+        { "name": "タオルを頭に乗せる", "value": "towel on head," },
+        { "name": "体にタオルを巻く", "value": "towel wrap," },
+        { "name": "隠しタオル", "value": "modesty towel," },
+        { "name": "木製の桶", "value": "wooden bucket," },
+        { "name": "風呂椅子", "value": "bath stool," },
+        { "name": "浴槽/バスタブ", "value": "bathtub," },
+        { "name": "シャワー", "value": "shower," },
+        { "name": "石鹸/ソープ", "value": "soap," },
+        { "name": "スポンジ/ボディタオル", "value": "sponge," },
+        { "name": "バスタオル", "value": "bath towel," },
+        { "name": "シャンプーボトル", "value": "shampoo bottle," },
+        { "name": "アヒルのおもちゃ", "value": "rubber duck," }
+      ]
+    },
+    "学校": {
+      "場面": [
+        {"name": "教室", "value": "classroom,"},
+        {"name": "図書室", "value": "library,"},
+        {"name": "屋上フェンス際", "value": "rooftop, chain-link fence, blue sky, wind,"},
+        {"name": "放課後の廊下", "value": "school corridor,"},
+        {"name": "保健室", "value": "infirmary, "},
+        {"name": "女子更衣室", "value": "changing room,"},
+        {"name": "体育館倉庫", "value": "gym storage,"},
+        {"name": "プールサイド", "value": "poolside,"},
+        {"name": "校庭", "value": "schoolyard,"},
+        {"name": "体育館", "value": "school gymnasium,"},
+        {"name": "保健室（密室）", "value": "infirmary, medical bed, white curtains, medical cabinet,"},
+        {"name": "体育館倉庫（フルセット）", "value": "clubroom, gym storage, vaulting horse, floor mats, dim,"}
+      ],
+      "小物":[
+        {"name": "黒板", "value": "blackboard,"},
+        {"name": "学習机", "value": "school desks,"},
+        {"name": "学校の椅子", "value": "school chairs,"},
+        {"name": "通学カバン", "value": "school bag,"},
+        {"name": "掛け時計", "value": "wall clock,"},
+        {"name": "廊下", "value": "hallway,"}
+      ]
+    },
+    "駅":{
+      "場面" :[
+        {"name": "駅のホーム", "value": "train platform, yellow line, tracks, station sign,"},
+        {"name": "電車の中", "value": "train interior,"}
+      ],
+      "小物":[
+        {"name": "駅ホームのベンチ", "value": "train platform, bench, waiting for train, yellow line,"},
+        {"name": "乗客", "value": "passengers,"},
+        {"name": "改札口", "value": "ticket gates,"}
+      ]
+    },
+    "オフィス・都会":{
+      "場面": [
+        {"name": "深夜のオフィス", "value": "office, night, desk lamp, skyscraper view,", "desc": "静かな残業風景。"},
+        {"name": "都会の雑踏", "value": "busy street, crowd, bokeh, neon lights,", "desc": "背景ボケと喧騒。"},
+        {"name": "雨の路地裏", "value": "alleyway, rain, puddles, neon reflection,", "desc": "路面反射の質感。"},
+        {"name": "高級ラウンジ", "value": "hotel lounge, luxury, marble, chandelier,", "desc": "リッチな空間。"},
+        {"name": "立体駐車場", "value": "parking garage, concrete, fluorescent light, shadows,", "desc": "無機質なコンクリート。"},
+        {"name": "試着室", "value": "fitting room, full mirror, curtains,", "desc": "鏡越しの空間。"},
+        {"name": "立体駐車場の影", "value": "parking garage, concrete, shadow, fluorescent light,", "desc": "無機質なコンクリート。"}
+      ],
+      "小物":[
+        {"name": "人混み", "value": "crowd,"},
+        {"name": "歩行者", "value": "pedestrians,"},
+        {"name": "街灯", "value": "street lamp,"},
+        {"name": "背景に人", "value": "background people,"},
+        {"name": "信号機", "value": "traffic light,"},
+        {"name": "歩道", "value": "sidewalk,"},
+        {"name": "横断歩道", "value": "crosswalk,"},
+        {"name": "超高層ビル", "value": "skyscraper,"},
+        {"name": "電線", "value": "power lines,", "desc": "空を横切る電気を送る線。"},
+        {"name": "電柱", "value": "utility pole,", "desc": "電線を支える柱。"}
+      ]
+    },
+    "女子高生の部屋": {
+      "場面":[
+        {"name": "勉強机のある子供部屋", "value": "student bedroom, study desk, bookshelf, school bag, posters, stuffed animals,"},
+        {"name": "ベッドの上の趣味空間", "value": "bedroom, messy bed, laptop on bed, smartphone, plushies, snacks,"},
+        {"name": "制服が掛かった壁際", "value": "bedroom wall, school uniform hanging, mirror, calendar, polaroid photos,"},
+        {"name": "整えられていないベッド", "value": "unmade bed,"},
+        {"name": "散らかった自室", "value": "messy bedroom, clothes on floor, bed, PC desk,"}
+      ]
+    },
+    "病院":{
+      "小物":[
+        {"name": "勉強机・オフィスチェア", "value": "swivel chair, sitting at desk,", "desc": "机に向かう動作。"},
+        {"name": "駅や公園のベンチ", "value": "bench, sitting on bench,", "desc": "屋外の休憩。"},
+        {"name": "ソファ", "value": "sitting on sofa, lounging,", "desc": "居間でのリラックス。"},
+        {"name": "診察室の回転椅子", "value": "medical stool, swivel chair,", "desc": "病院の緊張感。"},
+        {"name": "自室のベッド", "value": "on bed, lying on bed,", "desc": "無防備な自室。"},
+        {"name": "病院のベッド", "value": "hospital bed, reclining,", "desc": "療養中の描写。"},
+        {"name": "ラブホの円形ベッド", "value": "round bed, circular bed,", "desc": "非日常な演出。"},
+        {"name": "畳の上の布団", "value": "on futon, lying on floor,", "desc": "和室の情緒。"},
+        {"name": "ラグ・カーペット", "value": "on rug, sitting on floor,", "desc": "床でのリラックス。"},
+        {"name": "体育館のマット", "value": "gym mat, on floor,", "desc": "部活後の雰囲気。"},
+        {"name": "駅の階段", "value": "sitting on stairs,", "desc": "移動中の休憩や死角。"},
+        {"name": "バスルームの床", "value": "bathroom floor, tiles,"}
+      ]
+    },
+    "座るアイテム":{
+      "座るアイテム":[
+        {"name": "学習机", "value": "sitting on desk,"},
+        {"name": "椅子", "value": "sitting on chair,"},
+        {"name": "ベッドの端", "value": "sitting on edge of bed,"},
+        {"name": "ソファ", "value": "sitting on sofa,"},
+        {"name": "スツール", "value": "sitting on stool,"},
+        {"name": "駅のベンチ", "value": "sitting on station bench,"},
+        {"name": "電車の座席", "value": "sitting on train seat,"},
+        {"name": "階段", "value": "sitting on stairs,"},
+        {"name": "公園のブランコ", "value": "sitting on swing,"},
+        {"name": "手すり・ガードレール", "value": "perched on handrail,"},
+        {"name": "教卓", "value": "sitting on teacher's desk,"},
+        {"name": "跳び箱", "value": "sitting on vaulting horse,"},
+        {"name": "理科室の丸椅子", "value": "sitting on lab stool,"},
+        {"name": "ロッカーの上", "value": "sitting on lockers,"},
+        {"name": "床に直座り", "value": "sitting on floor,"},
+        {"name": "畳", "value": "sitting on tatami,"},
+        {"name": "ラグ・カーペット", "value": "sitting on rug,"}
+      ]
+    },
+    "屋外":{
+      "場面":[
+        {"name": "庭", "value": "garden, flower, fountain,"},
+        {"name": "花畑", "value": "field of flowers,"},
+        {"name": "山", "value": "mountain,"},
+        {"name": "森林", "value": "forest,"},
+        {"name": "海辺", "value": "seaside,"},
+        {"name": "ビーチ", "value": "beach,"},
+        {"name": "川辺", "value": "riverside, clear water, bridge,"},
+        {"name": "湖畔", "value": "lakeside,"},
+        {"name": "滝", "value": "waterfall,"},
+        {"name": "砂漠", "value": "desert, dune, sun, sunlight,"},
+        {"name": "青空", "value": "blue sky,"},
+        {"name": "星空", "value": "starry sky,"}
+      ]
+    },
+    "演出":{
+      "エフェクト":[
+        {"name": "擬音", "value": "sound effects,"},
+        {"name": "ビクンビクン", "value": "trembling,"},
+        {"name": "録画中", "value": "recording,"},
+        {"name": "動き線", "value": "motion lines,"}
+      ],
+      "演出・ディテール（Atmosphere）": [
+        {"name": "雨（しとしと）", "value": "rain, raindrops, wet, moisture,", "desc": "しっとりとした質感。"},
+        {"name": "豪雨（ずぶ濡れ）", "value": "heavy rain, downpour, soaking wet clothes,", "desc": "激しく打ち付ける雨。"},
+        {"name": "霧・霞", "value": "foggy, misty, hazy background, blurry,", "desc": "視界を遮り、幻想的にする。"},
+        {"name": "突風", "value": "windy, blowing wind, hair fluttering, skirt flip,", "desc": "動きとハプニングを呼ぶ。"},
+        {"name": "陽光に舞う埃", "value": "dust in sunlight, floating particles,", "desc": "光の筋の中に浮かぶ、微細な粒子や浮遊感。"},
+        {"name": "雨上がりの水たまり", "value": "puddles after rain, wet ground,", "desc": "路面に残った雨水の跡や、しっとりとした質感。"},
+        {"name": "反射・映り込み", "value": "reflections, glass reflection,", "desc": "窓や水面に映る周囲の景色。奥行きを出す演出。"},
+        {"name": "季節の彩り（落ち葉）", "value": "fallen leaves,", "desc": "地面に散らばった木の葉。季節感の強調。"},
+        {"name": "湯気・蒸気", "value": "steam, vapor,", "desc": "温かいものから立ち上る白い煙。温度感の演出。"}
+      ]
+    }
+  }
+}
