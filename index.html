@@ -4,352 +4,492 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prompt Generator</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* アコーディオン開閉のトランジション補助 */
-    details summary {
-      cursor: pointer;
-      user-select: none;
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-sub: #64748b;
+      --border-color: #e2e8f0;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --highlight-bg: #e0f2fe;
+      --highlight-border: #38bdf8;
+      --highlight-mid-bg: #f0f9ff;
+      --pill-bg: #f1f5f9;
+      --pill-text: #334155;
+      --pill-selected-bg: #0284c7;
+      --pill-selected-text: #ffffff;
     }
-    details summary::-webkit-details-marker {
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダーエリア */
+    .app-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .app-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .json-loader {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .json-loader input {
+      padding: 0.4rem 0.6rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 280px;
+    }
+
+    /* アコーディオン・階層構造 */
+    .accordion-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    details {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+    }
+
+    summary {
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      background-color: var(--card-bg);
+      transition: background-color 0.2s;
+    }
+
+    summary:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* ★ 選択項目がある場合のハイライトスタイル ★ */
+    /* 大分類（祖父） */
+    details.top-category.has-selected {
+      border: 2px solid var(--highlight-border);
+      box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.15);
+    }
+    details.top-category.has-selected > summary {
+      background-color: var(--highlight-bg);
+      color: #0369a1;
+      font-weight: 700;
+    }
+
+    /* 中分類（親） */
+    details.mid-category {
+      margin: 0.5rem 1rem 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+    }
+    details.mid-category.has-selected {
+      border-left: 4px solid var(--primary);
+    }
+    details.mid-category.has-selected > summary {
+      background-color: var(--highlight-mid-bg);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* 選択件数バッジ */
+    .badge-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 9999px;
+      min-width: 1.25rem;
+      height: 1.25rem;
+      padding: 0 0.4rem;
+      margin-left: 0.5rem;
+    }
+
+    /* 小分類＆ピル要素 */
+    .low-category-block {
+      padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .low-category-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      margin: 0.5rem 0 0.4rem 0;
+    }
+
+    .pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .pill {
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      padding: 0.3rem 0.7rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      user-select: none;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .pill:hover {
+      background: #e2e8f0;
+    }
+
+    .pill.selected {
+      background: var(--pill-selected-bg);
+      color: var(--pill-selected-text);
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(2, 132, 199, 0.25);
+    }
+
+    /* 出力エリア */
+    .output-section {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .output-header {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+      flex: 2;
+      min-width: 180px;
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background-color: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      flex: 1;
+      min-width: 120px;
+    }
+    .btn-secondary:hover {
+      background-color: #e2e8f0;
+    }
+
+    .textarea-group {
+      margin-top: 1rem;
+    }
+
+    .textarea-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      resize: vertical;
+      background: #fafafa;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+    }
+
+    /* メッセージ通知 */
+    #status-msg {
+      font-size: 0.85rem;
+      padding: 0.5rem;
+      border-radius: 4px;
       display: none;
+      margin-bottom: 1rem;
+    }
+    #status-msg.error {
+      display: block;
+      background: #fee2e2;
+      color: #b91c1c;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen font-sans">
+<body>
 
-  <div class="max-w-6xl mx-auto px-4 py-8">
+  <div class="container">
     <!-- ヘッダー -->
-    <header class="mb-8 border-b pb-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-      <div>
-        <h1 class="text-3xl font-bold text-slate-900 tracking-tight">Prompt Generator</h1>
-        <p class="text-sm text-slate-500 mt-1">選択項目からAI画像・動画生成用のプロンプトを一括作成します。</p>
-      </div>
-
-      <!-- JSON取得先設定エリア -->
-      <div class="w-full sm:w-auto flex flex-col gap-2">
-        <div class="flex gap-2">
-          <input 
-            type="text" 
-            id="jsonSourceInput" 
-            value="./prompts.json" 
-            placeholder="JSONのパスまたはRaw URL" 
-            class="text-xs px-3 py-1.5 border rounded-lg bg-white w-64 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-          <button 
-            id="reloadJsonBtn" 
-            class="text-xs bg-slate-200 hover:bg-slate-300 text-slate-700 px-3 py-1.5 rounded-lg transition"
-            title="最新のJSONを強制再読込"
-          >
-            🔄 再読込
-          </button>
-        </div>
-        <span id="loadStatus" class="text-xs text-slate-500"></span>
+    <header class="app-header">
+      <div class="app-title">🎨 Prompt Generator</div>
+      <div class="json-loader">
+        <input type="text" id="json-url" value="prompts.json" placeholder="JSONのパスまたはRaw URL">
+        <button class="btn-secondary" onclick="fetchAndRenderJSON()">再読込</button>
       </div>
     </header>
 
-    <!-- ローディング/エラー表示 -->
-    <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl border"></div>
+    <div id="status-msg"></div>
 
-    <main class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      <!-- 左ペイン: カテゴリ選択エリア -->
-      <section class="lg:col-span-7 bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-        <div class="flex justify-between items-center mb-4 pb-2 border-b">
-          <h2 class="text-xl font-bold text-slate-800">🔍 項目を選択</h2>
-          <span id="selectionCountBadge" class="text-xs bg-blue-100 text-blue-800 font-semibold px-2.5 py-0.5 rounded-full">0個 選択中</span>
-        </div>
+    <!-- 項目選択エリア -->
+    <section>
+      <h2 style="font-size: 1.1rem; margin-bottom: 0.75rem;">🔍 項目を選択</h2>
+      <div id="accordion-root" class="accordion-group">
+        <!-- JSで動的生成 -->
+      </div>
+    </section>
 
-        <div id="categoryContainer" class="space-y-4">
-          <!-- JSでカテゴリツリーとPillボタンを動的生成 -->
-        </div>
-      </section>
+    <!-- 生成結果エリア -->
+    <section class="output-section">
+      <div class="output-header">📄 生成結果</div>
+      
+      <div class="actions">
+        <button class="btn-primary" onclick="generatePrompts()">🚀 プロンプトを作成する</button>
+        <button class="btn-secondary" onclick="resetAll()">♻️ 選択をリセット</button>
+        <button class="btn-secondary" onclick="clearOutput()">🗑️ 表示をクリア</button>
+      </div>
 
-      <!-- 右ペイン: 結果表示・操作エリア (スクロール追従) -->
-      <section class="lg:col-span-5 sticky top-6 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col gap-4">
-        <div class="flex justify-between items-center border-b pb-3">
-          <h2 class="text-xl font-bold text-slate-800">📄 生成結果</h2>
-        </div>
+      <div class="textarea-group">
+        <label class="textarea-label">DomoAI Prompt Output</label>
+        <textarea id="output-domo" readonly placeholder="ボタンを押すとここにプロンプトが生成されます"></textarea>
+      </div>
 
-        <!-- アクションボタン群 -->
-        <div class="grid grid-cols-3 gap-2">
-          <button 
-            id="generateBtn" 
-            class="col-span-3 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-bold py-2.5 px-4 rounded-xl shadow-sm transition flex items-center justify-center gap-2"
-          >
-            <span>🚀</span> プロンプトを作成する
-          </button>
-          <button 
-            id="resetSelectionBtn" 
-            class="col-span-2 bg-slate-100 hover:bg-slate-200 active:scale-[0.99] text-slate-700 text-sm font-medium py-2 px-3 rounded-xl transition"
-          >
-            ♻️ 選択を全解除
-          </button>
-          <button 
-            id="clearOutputBtn" 
-            class="bg-slate-100 hover:bg-slate-200 active:scale-[0.99] text-slate-700 text-sm font-medium py-2 px-3 rounded-xl transition"
-          >
-            🗑️ クリア
-          </button>
-        </div>
-
-        <!-- 出力1: DomoAI -->
-        <div class="flex flex-col gap-1.5 mt-2">
-          <div class="flex justify-between items-center">
-            <label for="outputDomo" class="text-xs font-bold text-slate-600">DomoAI Prompt</label>
-            <button class="copy-btn text-xs text-blue-600 hover:text-blue-800" data-target="outputDomo">コピー</button>
-          </div>
-          <textarea 
-            id="outputDomo" 
-            rows="5" 
-            readonly 
-            placeholder="生成ボタンを押すとここに表示されます" 
-            class="w-full text-xs font-mono p-3 bg-slate-50 border rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-y"
-          ></textarea>
-        </div>
-
-        <!-- 出力2: Gemini -->
-        <div class="flex flex-col gap-1.5">
-          <div class="flex justify-between items-center">
-            <label for="outputGemini" class="text-xs font-bold text-slate-600">Gemini Prompt</label>
-            <button class="copy-btn text-xs text-blue-600 hover:text-blue-800" data-target="outputGemini">コピー</button>
-          </div>
-          <textarea 
-            id="outputGemini" 
-            rows="5" 
-            readonly 
-            placeholder="生成ボタンを押すとここに表示されます" 
-            class="w-full text-xs font-mono p-3 bg-slate-50 border rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-y"
-          ></textarea>
-        </div>
-      </section>
-    </main>
+      <div class="textarea-group">
+        <label class="textarea-label">Gemini Prompt Output</label>
+        <textarea id="output-gem" readonly placeholder="ボタンを押すとここにプロンプトが生成されます"></textarea>
+      </div>
+    </section>
   </div>
 
   <script>
-    // --- 状態管理 ---
-    let promptData = {};
-    const selectedValues = new Set(); // 選択された value を保持 (順序保持・重複防止)
+    let jsonData = {};
 
-    // --- DOM要素 ---
-    const categoryContainer = document.getElementById("categoryContainer");
-    const jsonSourceInput = document.getElementById("jsonSourceInput");
-    const reloadJsonBtn = document.getElementById("reloadJsonBtn");
-    const loadStatus = document.getElementById("loadStatus");
-    const statusMessage = document.getElementById("statusMessage");
-    const selectionCountBadge = document.getElementById("selectionCountBadge");
-    
-    const generateBtn = document.getElementById("generateBtn");
-    const resetSelectionBtn = document.getElementById("resetSelectionBtn");
-    const clearOutputBtn = document.getElementById("clearOutputBtn");
-    const outputDomo = document.getElementById("outputDomo");
-    const outputGemini = document.getElementById("outputGemini");
+    // 1. JSON読み込みと初期化（キャッシュ無効化クエリ付き）
+    async function fetchAndRenderJSON() {
+      const urlInput = document.getElementById('json-url').value.trim();
+      const statusMsg = document.getElementById('status-msg');
+      statusMsg.style.display = 'none';
 
-    // --- JSON読み込み処理 ---
-    async function loadPrompts(url) {
-      showStatus("読み込み中...", "info");
-      loadStatus.textContent = "取得中...";
-      
+      // GitHub更新直後のキャッシュ対策としてタイムスタンプを付加
+      const cacheBustUrl = urlInput.includes('?') 
+        ? `${urlInput}&_t=${new Date().getTime()}` 
+        : `${urlInput}?_t=${new Date().getTime()}`;
+
       try {
-        // GitHubキャッシュ対策: タイムスタンプクエリを付与して常に最新を取得
-        const cacheBuster = (url.includes('?') ? '&' : '?') + '_t=' + Date.now();
-        const response = await fetch(url + cacheBuster);
-        
+        const response = await fetch(cacheBustUrl);
         if (!response.ok) {
-          throw new Error(`HTTPエラー: ${response.status} (${response.statusText})`);
+          throw new Error(`HTTPエラー: ステータス ${response.status}`);
         }
-        
-        promptData = await response.json();
-        hideStatus();
-        loadStatus.textContent = "同期完了";
-        renderCategoryTree(promptData);
+        jsonData = await response.json();
+        renderUI(jsonData);
       } catch (err) {
-        console.error(err);
-        showStatus(`JSONデータの取得に失敗しました: ${err.message}`, "error");
-        loadStatus.textContent = "読み込みエラー";
-        categoryContainer.innerHTML = "";
+        statusMsg.textContent = `JSONの読み込みに失敗しました: ${err.message}`;
+        statusMsg.className = 'error';
+        document.getElementById('accordion-root').innerHTML = '';
       }
     }
 
-    // --- UIステータス表示 ---
-    function showStatus(text, type) {
-      statusMessage.classList.remove("hidden", "bg-red-50", "border-red-200", "text-red-700", "bg-blue-50", "border-blue-200", "text-blue-700");
-      if (type === "error") {
-        statusMessage.classList.add("bg-red-50", "border-red-200", "text-red-700");
-      } else {
-        statusMessage.classList.add("bg-blue-50", "border-blue-200", "text-blue-700");
-      }
-      statusMessage.textContent = text;
-    }
+    // 2. UIの動的構築
+    function renderUI(data) {
+      const root = document.getElementById('accordion-root');
+      root.innerHTML = '';
 
-    function hideStatus() {
-      statusMessage.classList.add("hidden");
-    }
-
-    // --- カテゴリUIツリーの構築 ---
-    function renderCategoryTree(data) {
-      categoryContainer.innerHTML = "";
-
-      // 大カテゴリ (Top)
       for (const [topCat, midData] of Object.entries(data)) {
-        const topDetails = document.createElement("details");
-        topDetails.className = "group border rounded-xl overflow-hidden bg-white shadow-xs";
-        
-        const topSummary = document.createElement("summary");
-        topSummary.className = "flex justify-between items-center px-4 py-3 bg-slate-100 hover:bg-slate-200/80 font-bold text-slate-800 text-sm list-none transition cursor-pointer";
-        topSummary.innerHTML = `
-          <span>📂 ${escapeHtml(topCat)}</span>
-          <span class="text-xs transition-transform group-open:rotate-180 text-slate-400">▼</span>
-        `;
+        const topDetails = document.createElement('details');
+        topDetails.className = 'top-category';
+
+        const topSummary = document.createElement('summary');
+        topSummary.innerHTML = `<span>📂 ${topCat}</span>`;
         topDetails.appendChild(topSummary);
 
-        const topContent = document.createElement("div");
-        topContent.className = "p-3 space-y-3 bg-slate-50/50";
-
-        // 中カテゴリ (Mid)
         for (const [midCat, lowData] of Object.entries(midData)) {
-          const midDetails = document.createElement("details");
-          midDetails.className = "group/mid border border-slate-200 rounded-lg overflow-hidden bg-white";
-          
-          const midSummary = document.createElement("summary");
-          midSummary.className = "flex justify-between items-center px-3 py-2 bg-slate-50 hover:bg-slate-100 font-semibold text-slate-700 text-xs list-none transition cursor-pointer";
-          midSummary.innerHTML = `
-            <span>🔹 ${escapeHtml(midCat)}</span>
-            <span class="text-[10px] transition-transform group-open/mid:rotate-180 text-slate-400">▼</span>
-          `;
+          const midDetails = document.createElement('details');
+          midDetails.className = 'mid-category';
+
+          const midSummary = document.createElement('summary');
+          midSummary.innerHTML = `<span>🔹 ${midCat}</span>`;
           midDetails.appendChild(midSummary);
 
-          const midContent = document.createElement("div");
-          midContent.className = "p-3 space-y-3";
-
-          // 小カテゴリ (Low)
           for (const [lowCat, items] of Object.entries(lowData)) {
-            if (!items || items.length === 0) continue;
+            if (!Array.isArray(items) || items.length === 0) continue;
 
-            const lowBlock = document.createElement("div");
-            lowBlock.className = "flex flex-col gap-1.5";
+            const block = document.createElement('div');
+            block.className = 'low-category-block';
 
-            const lowTitle = document.createElement("span");
-            lowTitle.className = "text-xs font-bold text-slate-600";
-            lowTitle.textContent = lowCat;
-            lowBlock.appendChild(lowTitle);
+            const title = document.createElement('div');
+            title.className = 'low-category-title';
+            title.textContent = lowCat;
+            block.appendChild(title);
 
-            // Pills (タグボタン群)
-            const pillContainer = document.createElement("div");
-            pillContainer.className = "flex flex-wrap gap-1.5";
+            const pillsWrap = document.createElement('div');
+            pillsWrap.className = 'pills-container';
 
             items.forEach(item => {
-              const pill = document.createElement("button");
-              pill.type = "button";
+              const pill = document.createElement('span');
+              pill.className = 'pill';
               pill.textContent = item.name;
               pill.dataset.value = item.value;
-              pill.className = "pill-btn px-2.5 py-1 text-xs rounded-full border transition duration-150 ease-in-out select-none border-slate-300 text-slate-700 bg-white hover:border-blue-400";
-              
-              if (item.desc) {
-                pill.title = item.desc;
-              }
 
-              pill.addEventListener("click", () => togglePill(pill, item.value));
-              pillContainer.appendChild(pill);
+              pill.addEventListener('click', () => {
+                pill.classList.toggle('selected');
+                updateCategoryHighlights();
+              });
+
+              pillsWrap.appendChild(pill);
             });
 
-            lowBlock.appendChild(pillContainer);
-            midContent.appendChild(lowBlock);
+            block.appendChild(pillsWrap);
+            midDetails.appendChild(block);
           }
 
-          midDetails.appendChild(midContent);
-          topContent.appendChild(midDetails);
+          topDetails.appendChild(midDetails);
         }
 
-        topDetails.appendChild(topContent);
-        categoryContainer.appendChild(topDetails);
+        root.appendChild(topDetails);
       }
     }
 
-    // --- ピル選択切り替え ---
-    function togglePill(btn, value) {
-      if (selectedValues.has(value)) {
-        selectedValues.delete(value);
-        btn.classList.remove("bg-blue-600", "text-white", "border-blue-600", "font-medium");
-        btn.classList.add("bg-white", "text-slate-700", "border-slate-300");
-      } else {
-        selectedValues.add(value);
-        btn.classList.add("bg-blue-600", "text-white", "border-blue-600", "font-medium");
-        btn.classList.remove("bg-white", "text-slate-700", "border-slate-300");
-      }
-      updateBadge();
-    }
+    // 3. 親・祖父階層のハイライトと件数バッジの更新
+    function updateCategoryHighlights() {
+      // 大分類を走査
+      document.querySelectorAll('.top-category').forEach(topEl => {
+        const topSelectedCount = topEl.querySelectorAll('.pill.selected').length;
+        const topSummary = topEl.querySelector('summary');
 
-    // --- バッジ更新 ---
-    function updateBadge() {
-      selectionCountBadge.textContent = `${selectedValues.size}個 選択中`;
-    }
+        if (topSelectedCount > 0) {
+          topEl.classList.add('has-selected');
+          updateBadge(topSummary, topSelectedCount);
+        } else {
+          topEl.classList.remove('has-selected');
+          removeBadge(topSummary);
+        }
 
-    // --- プロンプト生成 ---
-    generateBtn.addEventListener("click", () => {
-      const combined = Array.from(selectedValues).join("");
-      const prefix = "かわいいアニメイラスト. 9:16, ";
+        // 中分類を走査
+        topEl.querySelectorAll('.mid-category').forEach(midEl => {
+          const midSelectedCount = midEl.querySelectorAll('.pill.selected').length;
+          const midSummary = midEl.querySelector('summary');
 
-      outputDomo.value = combined;
-      outputGemini.value = combined ? `${prefix}${combined}` : "";
-    });
-
-    // --- 選択リセット ---
-    resetSelectionBtn.addEventListener("click", () => {
-      selectedValues.clear();
-      document.querySelectorAll(".pill-btn").forEach(btn => {
-        btn.classList.remove("bg-blue-600", "text-white", "border-blue-600", "font-medium");
-        btn.classList.add("bg-white", "text-slate-700", "border-slate-300");
-      });
-      updateBadge();
-    });
-
-    // --- 出力クリア ---
-    clearOutputBtn.addEventListener("click", () => {
-      outputDomo.value = "";
-      outputGemini.value = "";
-    });
-
-    // --- クリップボードコピー機能 ---
-    document.querySelectorAll(".copy-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const targetId = btn.dataset.target;
-        const targetInput = document.getElementById(targetId);
-        if (!targetInput.value) return;
-
-        navigator.clipboard.writeText(targetInput.value).then(() => {
-          const original = btn.textContent;
-          btn.textContent = "完了!";
-          btn.classList.add("text-green-600");
-          setTimeout(() => {
-            btn.textContent = original;
-            btn.classList.remove("text-green-600");
-          }, 1500);
+          if (midSelectedCount > 0) {
+            midEl.classList.add('has-selected');
+            updateBadge(midSummary, midSelectedCount);
+          } else {
+            midEl.classList.remove('has-selected');
+            removeBadge(midSummary);
+          }
         });
       });
-    });
-
-    // --- JSONソース変更 / 再読み込み ---
-    reloadJsonBtn.addEventListener("click", () => {
-      const url = jsonSourceInput.value.trim();
-      if (url) {
-        loadPrompts(url);
-      }
-    });
-
-    // --- エスケープ処理 ---
-    function escapeHtml(str) {
-      return str
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
     }
 
-    // --- 初期ロード ---
-    window.addEventListener("DOMContentLoaded", () => {
-      loadPrompts(jsonSourceInput.value.trim());
-    });
+    function updateBadge(summaryEl, count) {
+      if (!summaryEl) return;
+      let badge = summaryEl.querySelector('.badge-count');
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'badge-count';
+        summaryEl.appendChild(badge);
+      }
+      badge.textContent = count;
+    }
+
+    function removeBadge(summaryEl) {
+      if (!summaryEl) return;
+      const badge = summaryEl.querySelector('.badge-count');
+      if (badge) {
+        badge.remove();
+      }
+    }
+
+    // 4. プロンプト生成
+    function generatePrompts() {
+      const selectedPills = document.querySelectorAll('.pill.selected');
+      const values = Array.from(selectedPills).map(p => p.dataset.value);
+      const combined = values.join('');
+
+      const prefix = "かわいいアニメイラスト. 9:16, ";
+      
+      document.getElementById('output-domo').value = combined;
+      document.getElementById('output-gem').value = combined ? `${prefix}${combined}` : '';
+    }
+
+    // 5. リセットとクリア
+    function resetAll() {
+      document.querySelectorAll('.pill.selected').forEach(p => p.classList.remove('selected'));
+      updateCategoryHighlights();
+      document.getElementById('output-domo').value = '';
+      document.getElementById('output-gem').value = '';
+    }
+
+    function clearOutput() {
+      document.getElementById('output-domo').value = '';
+      document.getElementById('output-gem').value = '';
+    }
+
+    // ページロード時に自動読み込み
+    window.addEventListener('DOMContentLoaded', fetchAndRenderJSON);
   </script>
 </body>
 </html>
