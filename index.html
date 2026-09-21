@@ -13,6 +13,7 @@
       --border-color: #e2e8f0;
       --primary: #0284c7;
       --primary-hover: #0369a1;
+      --success: #10b981;
       --highlight-bg: #e0f2fe;
       --highlight-border: #38bdf8;
       --highlight-mid-bg: #f0f9ff;
@@ -104,7 +105,7 @@
       background-color: #f1f5f9;
     }
 
-    /* ★ 選択項目がある場合のハイライトスタイル ★ */
+    /* 選択項目がある場合のハイライトスタイル */
     /* 大分類（祖父） */
     details.top-category.has-selected {
       border: 2px solid var(--highlight-border);
@@ -205,7 +206,7 @@
     .actions {
       display: flex;
       gap: 0.75rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       flex-wrap: wrap;
     }
 
@@ -216,7 +217,7 @@
       font-weight: 600;
       cursor: pointer;
       border: none;
-      transition: background 0.2s;
+      transition: background 0.2s, color 0.2s;
     }
 
     .btn-primary {
@@ -240,16 +241,41 @@
       background-color: #e2e8f0;
     }
 
+    /* コピーボタン付きテキストエリアヘッダー */
     .textarea-group {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .textarea-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.4rem;
     }
 
     .textarea-label {
       font-size: 0.85rem;
       font-weight: 600;
       color: var(--text-sub);
-      margin-bottom: 0.25rem;
-      display: block;
+    }
+
+    .btn-copy {
+      background-color: #f8fafc;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.25rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-copy:hover {
+      background-color: #e2e8f0;
+    }
+    .btn-copy.copied {
+      background-color: var(--success);
+      color: #ffffff;
+      border-color: var(--success);
     }
 
     textarea {
@@ -263,7 +289,6 @@
       resize: vertical;
       background: #fafafa;
       color: var(--text-main);
-      margin-bottom: 1rem;
     }
 
     /* メッセージ通知 */
@@ -313,13 +338,21 @@
         <button class="btn-secondary" onclick="clearOutput()">🗑️ 表示をクリア</button>
       </div>
 
+      <!-- DomoAI用出力 -->
       <div class="textarea-group">
-        <label class="textarea-label">DomoAI Prompt Output</label>
+        <div class="textarea-header-row">
+          <span class="textarea-label">DomoAI Prompt Output</span>
+          <button id="btn-copy-domo" class="btn-copy" onclick="copyPrompt('output-domo', 'btn-copy-domo')">📋 コピー</button>
+        </div>
         <textarea id="output-domo" readonly placeholder="ボタンを押すとここにプロンプトが生成されます"></textarea>
       </div>
 
+      <!-- Gemini用出力 -->
       <div class="textarea-group">
-        <label class="textarea-label">Gemini Prompt Output</label>
+        <div class="textarea-header-row">
+          <span class="textarea-label">Gemini Prompt Output</span>
+          <button id="btn-copy-gem" class="btn-copy" onclick="copyPrompt('output-gem', 'btn-copy-gem')">📋 コピー</button>
+        </div>
         <textarea id="output-gem" readonly placeholder="ボタンを押すとここにプロンプトが生成されます"></textarea>
       </div>
     </section>
@@ -328,13 +361,15 @@
   <script>
     let jsonData = {};
 
+    // 定義：末尾に必ず付与するデフォルト文言
+    const SUFFIX_TEXT = "Fine, delicate linework, gentle color scheme, artistic and elegant touch, masterpiece, best quality, 8k";
+
     // 1. JSON読み込みと初期化（キャッシュ無効化クエリ付き）
     async function fetchAndRenderJSON() {
       const urlInput = document.getElementById('json-url').value.trim();
       const statusMsg = document.getElementById('status-msg');
       statusMsg.style.display = 'none';
 
-      // GitHub更新直後のキャッシュ対策としてタイムスタンプを付加
       const cacheBustUrl = urlInput.includes('?') 
         ? `${urlInput}&_t=${new Date().getTime()}` 
         : `${urlInput}?_t=${new Date().getTime()}`;
@@ -415,7 +450,6 @@
 
     // 3. 親・祖父階層のハイライトと件数バッジの更新
     function updateCategoryHighlights() {
-      // 大分類を走査
       document.querySelectorAll('.top-category').forEach(topEl => {
         const topSelectedCount = topEl.querySelectorAll('.pill.selected').length;
         const topSummary = topEl.querySelector('summary');
@@ -428,7 +462,6 @@
           removeBadge(topSummary);
         }
 
-        // 中分類を走査
         topEl.querySelectorAll('.mid-category').forEach(midEl => {
           const midSelectedCount = midEl.querySelectorAll('.pill.selected').length;
           const midSummary = midEl.querySelector('summary');
@@ -463,7 +496,7 @@
       }
     }
 
-    // 4. プロンプト生成
+    // 4. プロンプト生成（末尾に指定文言を自動付加）
     function generatePrompts() {
       const selectedPills = document.querySelectorAll('.pill.selected');
       const values = Array.from(selectedPills).map(p => p.dataset.value);
@@ -471,16 +504,49 @@
 
       const prefix = "かわいいアニメイラスト. 9:16, ";
       
-      document.getElementById('output-domo').value = combined;
-      document.getElementById('output-gem').value = combined ? `${prefix}${combined}` : '';
+      // 選択がある場合は末尾にカンマ区切りを調整して付加、空の場合でも末尾指定をベースに生成
+      const domoOutput = combined ? `${combined}${SUFFIX_TEXT}` : SUFFIX_TEXT;
+      const gemOutput = `${prefix}${domoOutput}`;
+
+      document.getElementById('output-domo').value = domoOutput;
+      document.getElementById('output-gem').value = gemOutput;
     }
 
-    // 5. リセットとクリア
+    // 5. クリップボードへのコピー機能（各ボタン個別制御）
+    async function copyPrompt(textareaId, buttonId) {
+      const textarea = document.getElementById(textareaId);
+      const button = document.getElementById(buttonId);
+
+      if (!textarea.value) return;
+
+      try {
+        await navigator.clipboard.writeText(textarea.value);
+        const originalText = button.textContent;
+        button.textContent = "✅ コピー完了!";
+        button.classList.add('copied');
+
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.classList.remove('copied');
+        }, 1500);
+      } catch (err) {
+        // フォールバック（古い環境や非セキュア環境対応）
+        textarea.select();
+        document.execCommand('copy');
+        button.textContent = "✅ コピー完了!";
+        button.classList.add('copied');
+        setTimeout(() => {
+          button.textContent = "📋 コピー";
+          button.classList.remove('copied');
+        }, 1500);
+      }
+    }
+
+    // 6. リセットとクリア
     function resetAll() {
       document.querySelectorAll('.pill.selected').forEach(p => p.classList.remove('selected'));
       updateCategoryHighlights();
-      document.getElementById('output-domo').value = '';
-      document.getElementById('output-gem').value = '';
+      clearOutput();
     }
 
     function clearOutput() {
