@@ -502,7 +502,8 @@
       const values = Array.from(selectedPills).map(p => p.dataset.value);
       const combined = values.join('');
 
-      const prefix = "かわいいアニメイラスト. 9:16, ";
+      const prefix = "Digital anime illustration,
+Art style features delicate fine-line pen work, soft brush stroke realism, highly detailed and intricately drawn. Smooth cel-shading with soft gradients, ambient lighting with delicate highlights. Textures include visible ribbed fabric knit, soft skin texture, and rustic plaster wall. Warm, desaturated, harmonious color palette, high fidelity anime style";
       
       // 選択がある場合は末尾にカンマ区切りを調整して付加、空の場合でも末尾指定をベースに生成
       const domoOutput = combined ? `${combined}${SUFFIX_TEXT}` : SUFFIX_TEXT;
