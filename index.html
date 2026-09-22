@@ -241,7 +241,7 @@
       background-color: #e2e8f0;
     }
 
-    /* コピーボタン付きテキストエリアヘッダー */
+    /* コピーボタン付きテキストエリア */
     .textarea-group {
       margin-top: 1.25rem;
     }
@@ -363,6 +363,9 @@
 
     // 定義：末尾に必ず付与するデフォルト文言
     const SUFFIX_TEXT = "Fine, delicate linework, gentle color scheme, artistic and elegant touch, masterpiece, best quality, 8k";
+
+    // 定義：Gemini用にセットするアートスタイルプレフィックス
+    const GEMINI_PREFIX = "Art style features delicate fine-line pen work, soft brush stroke realism, highly detailed and intricately drawn. Smooth cel-shading with soft gradients, ambient lighting with delicate highlights. Textures include visible ribbed fabric knit, soft skin texture, and rustic plaster wall. Warm, desaturated, harmonious color palette, high fidelity anime style, ";
 
     // 1. JSON読み込みと初期化（キャッシュ無効化クエリ付き）
     async function fetchAndRenderJSON() {
@@ -496,24 +499,23 @@
       }
     }
 
-    // 4. プロンプト生成（末尾に指定文言を自動付加）
+    // 4. プロンプト生成（先頭・末尾の自動結合）
     function generatePrompts() {
       const selectedPills = document.querySelectorAll('.pill.selected');
       const values = Array.from(selectedPills).map(p => p.dataset.value);
       const combined = values.join('');
 
-      const prefix = "Digital anime illustration,
-Art style features delicate fine-line pen work, soft brush stroke realism, highly detailed and intricately drawn. Smooth cel-shading with soft gradients, ambient lighting with delicate highlights. Textures include visible ribbed fabric knit, soft skin texture, and rustic plaster wall. Warm, desaturated, harmonious color palette, high fidelity anime style";
-      
-      // 選択がある場合は末尾にカンマ区切りを調整して付加、空の場合でも末尾指定をベースに生成
+      // DomoAI用出力: [選択項目] + [末尾デフォルト文言]
       const domoOutput = combined ? `${combined}${SUFFIX_TEXT}` : SUFFIX_TEXT;
-      const gemOutput = `${prefix}${domoOutput}`;
+
+      // Gemini用出力: [アートスタイル指定プレフィックス] + [選択項目] + [末尾デフォルト文言]
+      const gemOutput = `${GEMINI_PREFIX}${domoOutput}`;
 
       document.getElementById('output-domo').value = domoOutput;
       document.getElementById('output-gem').value = gemOutput;
     }
 
-    // 5. クリップボードへのコピー機能（各ボタン個別制御）
+    // 5. クリップボードへのコピー機能
     async function copyPrompt(textareaId, buttonId) {
       const textarea = document.getElementById(textareaId);
       const button = document.getElementById(buttonId);
@@ -531,7 +533,6 @@ Art style features delicate fine-line pen work, soft brush stroke realism, highl
           button.classList.remove('copied');
         }, 1500);
       } catch (err) {
-        // フォールバック（古い環境や非セキュア環境対応）
         textarea.select();
         document.execCommand('copy');
         button.textContent = "✅ コピー完了!";
